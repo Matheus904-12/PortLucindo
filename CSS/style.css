@@ -303,6 +303,15 @@ nav {
 
 /* ----- SCROLL ----- */
 
+.scroll-icon-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
 .scroll-btn {
     position: absolute;
     bottom: 20px;
@@ -410,6 +419,7 @@ h3 {
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
+    height: 94%;
     background: var(--color-white);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 20px;
@@ -471,7 +481,7 @@ h3 {
 .skills-icon {
     display: inline-block;
     margin-right: 10px;
-    font-size: 1.6em;
+    font-size: 1.2em;
     vertical-align: middle;
     color: var(--first-color);
     animation: skillsIconPulse 1.2s infinite alternate cubic-bezier(.4,0,.2,1);
@@ -480,6 +490,10 @@ h3 {
 @keyframes skillsIconPulse {
     0% { filter: brightness(1); transform: scale(1); }
     100% { filter: brightness(1.5); transform: scale(1.18); }
+}
+
+.grid {
+    margin-top: 10%;
 }
 
 /* ----- HISTÓRICO BOX ----- */
@@ -647,7 +661,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 330px;
+    height: 340px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -663,15 +677,15 @@ h3 {
 
 .project-box3 img {
     width: 90%;
-    height: 65%;
+    height: 62%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 16px;
     background: #f8f8f8;
 }
 
 .project-box3 h3 {
-    font-size: 1.1rem;
+
     font-weight: 600;
     margin-bottom: 6px;
     text-align: center;
@@ -682,7 +696,7 @@ h3 {
     font-weight: 500;
     margin-bottom: 0;
     text-align: center;
-    background: var(--second-color);
+    background: var(--first-color);
     color: var(--color-white);
     padding: 2px 10px;
     border-radius: 10px;
@@ -1004,8 +1018,74 @@ footer {
     .input-field {
         width: 100%;
     }
-    background: var(--first-color-hover);
-    color: #fff;
-    transform: scale(1.08) translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0,150,136,0.18);
+        /* Removido código inválido solto */
+}
+
+@media only screen and (max-width: 320px) {
+    h3 {
+        font-size: 15.5px;
+    }
+
+    .project-box2 label {
+        font-size: 14px;
+    }
+
+    .project-box label {
+        font-size: 14px;
+    }
+
+    .project-box3 {
+        height: 250px;
+    }
+
+    .project-box3 img {
+        height: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    h3 {
+        font-size: 17.5px;
+    }
+
+    .project-box2 label {
+        font-size: 14px;
+    }
+
+    .project-box label {
+        font-size: 14px;
+    }
+
+    .project-box3 {
+        height: 300px;
+    }
+
+    .project-box3 img {
+        height: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    h3 {
+        font-size: 15.5px;
+    }
+
+    .project-box2 label {
+        font-size: 13.5px;
+    }
+
+    .project-box label {
+        font-size: 14px;
+    }
+
+    .project-box3 {
+        height: 350px;
+    }
+
+    .project-box3 img {
+        height: 55%;
+    }
+
 }
