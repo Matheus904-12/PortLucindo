@@ -3,7 +3,20 @@
 Olá! Seja muito bem-vindo ao meu portfólio profissional.
 
 ## Sobre Mim
-Sou Matheus Lucindo, desenvolvedor web apaixonado por tecnologia, inovação e soluções criativas. Tenho experiência sólida em desenvolvimento Front-End e Back-End, com atuação em projetos de e-commerce, sistemas para ONGs, aplicativos e sites institucionais.
+Meu nome é Matheus Lucindo dos Santos, tenho 18 anos e sou um desenvolvedor web full
+                                stack com uma paixão genuína por tecnologia. Sou comunicativo, adoro aprender coisas
+                                novas e destaco-me pela organização, pontualidade, bom humor, calma e foco, qualidades
+                                que me permitem enfrentar desafios com serenidade e eficiência. Essas características,
+                                combinadas com meu entusiasmo por inovação, me impulsionam a buscar constantemente
+                                oportunidades de crescimento e a contribuir de forma significativa para qualquer equipe.
+
+Recentemente, fui aprovado na iniciação científica da UMC para um projeto privado, o que
+                                reflete meu interesse em pesquisa e desenvolvimento tecnológico. Estou dividido entre
+                                seguir uma carreira acadêmica, aprofundando-me em estudos e contribuindo para o avanço
+                                do conhecimento, ou optar pela governança de TI, onde poderei gerenciar projetos e
+                                liderar equipes com impacto estratégico. Essa dualidade me motiva a explorar ambos os
+                                caminhos, sempre buscando entregar resultados consistentes e de qualidade enquanto
+                                evoluo profissionalmente.
 
 - **Formação:**
   - Análise e Desenvolvimento de Sistemas (UMC)
