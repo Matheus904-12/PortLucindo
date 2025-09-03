@@ -56,7 +56,7 @@ sr.reveal('.featured-text-info',{delay: 200})
 sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
-
+sr.reveal('.scroll-icon-box',{interval: 200})
 
 /* -- PROJECT BOX -- */
 sr.reveal('.project-box',{interval: 200})
