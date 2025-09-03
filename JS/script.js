@@ -62,6 +62,22 @@ sr.reveal('.featured-image',{delay: 300})
 sr.reveal('.project-box',{interval: 200})
 sr.reveal('.project-box2',{interval: 200})
 
+// -- CERTIFICATION CARDS --
+sr.reveal('.project-box3',{interval: 200})
+
+// Torna o card de certificação clicável para abrir o certificado
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.project-box3').forEach(function(card) {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function() {
+      const url = card.getAttribute('data-cert-url');
+      if(url) {
+        window.open(url, '_blank');
+      }
+    });
+  });
+});
+
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
 
@@ -101,16 +117,14 @@ const scrollY = window.scrollY;
 sections.forEach(current =>{
   const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 50,
-    sectionId = current.getAttribute('id')
-
-  if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
-
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-
-  }  else {
-
-    document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
+      sectionId = current.getAttribute('id');
+  const link = document.querySelector('.nav-menu a[href*=' + sectionId + ']');
+  if (link) {
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      link.classList.add('active-link');
+    } else {
+      link.classList.remove('active-link');
+    }
   }
 })
 }
