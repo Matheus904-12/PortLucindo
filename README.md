@@ -27,14 +27,17 @@ Recentemente, fui aprovado na iniciação científica da UMC para um projeto pri
 
 ## Competências Técnicas
 - **Front-End:** HTML, CSS, JavaScript, React, Bootstrap, jQuery, Figma
-- **Back-End:** PHP, Node.js, Express, Firebase Functions, REST APIs
-- **Banco de Dados:** MySQL, Cloud Firestore, MongoDB, SQLite
-- **Ferramentas:** GitHub, VS Code, Postman, Trello
+- **Back-End:** Python, PHP, Node.js, Django, Flask, Express, Firebase Functions, REST APIs
+- **Banco de Dados:** MySQL, Cloud Firestore, MongoDB, SQLite, PostgreSQL
+- **Ferramentas:** Docker, GitHub, VS Code, Figma, Canva, Postman, Trello, Miro, Cypress, Gemini
 
 ## Contato
 - **E-mail:** matheuslucindo904@gmail.com
 - **LinkedIn:** [matheus-lucindo-b35b68190](https://www.linkedin.com/in/matheus-lucindo-b35b68190/)
 - **Instagram:** [@matheus_lucindo](https://www.instagram.com/matheus_lucindo/)
+- **YouTube:** [Matheus Lucindo](https://www.youtube.com/channel/UCRWCQiwc3OvBcikT3Fq2iEA)
+- **Credly:** [matheus-lucindo](https://www.credly.com/users/matheus-lucindo/badges#credly)
+- **Currículo Lattes:** [CNPq Lattes](https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=53217E03D11D285AD6BAD12311586B96)
 - **GitHub:** [Matheus904-12](https://github.com/Matheus904-12)
 
 ## Currículo
