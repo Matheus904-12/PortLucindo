@@ -250,8 +250,10 @@ nav {
 
 .social_icons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5em;
     gap: 30px;
+    justify-content: center;
 }
 
 /* ----- ICONS ----- */
@@ -948,7 +950,16 @@ footer {
     }
 
     .social_icons {
-        margin-top: 2em;
+        margin-top: 0px;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .scroll-btn {
+        margin-top: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center
     }
 
     .featured-image {
