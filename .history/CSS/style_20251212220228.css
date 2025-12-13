@@ -838,23 +838,6 @@ textarea {
     color: red;
 }
 
-/* ----- TESTIMONIALS SECTION ----- */
-
-#testimonials .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#testimonials .col {
-    max-width: 800px;
-    width: 100%;
-}
-
-#testimonials .form-control {
-    width: 100%;
-}
-
 /* ----- FOOTER ----- */
 
 footer {
@@ -870,7 +853,6 @@ footer {
 .top-footer p {
     font-size: 25px;
     font-weight: 600;
-    color: var(--text-color-third);
 }
 
 .middle-footer .footer-menu {

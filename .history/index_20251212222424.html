@@ -50,10 +50,6 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-                        <a href="#testimonials" class="nav-link">Depoimentos</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
                         <a href="#contact" class="nav-link">Contato</a>
                         <div class="circle"></div>
                     </li>
@@ -79,7 +75,7 @@
                         <p>Eu sou <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Desenvolvedor Web, Desenvolvedor de Software e Analista de Sistemas especializado na criação de sites e aplicações modernas, focado em
+                        <p>Desenvolvedor Web especializado na criação de sites e aplicações modernas, focado em
                             performance, design responsivo e usabilidade.
                         </p>
                     </div>
@@ -139,7 +135,7 @@
                     <div class="col">
                         <div class="about-info">
                             <h3>Minha Introdução</h3>
-                            <p>Meu nome é Matheus Lucindo dos Santos, tenho 19 anos e sou desenvolvedor web, desenvolvedor de software e analista de sistemas full
+                            <p>Meu nome é Matheus Lucindo dos Santos, tenho 19 anos e sou um desenvolvedor web full
                                 stack com uma paixão genuína por tecnologia. Sou comunicativo, adoro aprender coisas
                                 novas e destaco-me pela organização, pontualidade, bom humor, calma e foco, qualidades
                                 que me permitem enfrentar desafios com serenidade e eficiência. Essas características,
@@ -148,8 +144,9 @@
                             </p>
                             <br>
                             <p>
-                                Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UMC e participando ativamente do projeto Prodmais através da iniciação científica PIBIC/PIVIC, onde desenvolvo soluções tecnológicas inovadoras. Com experiência prática em
-                                desenvolvimento full stack e análise de sistemas, busco constantemente aprimorar minhas habilidades técnicas e
+                                Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UMC e participando
+                                de iniciação científica em um projeto inovador. Com experiência prática em
+                                desenvolvimento full stack, busco constantemente aprimorar minhas habilidades técnicas e
                                 contribuir com soluções criativas e eficientes. Minha trajetória inclui mentorias em
                                 workshops de design (Figma) e atuação como influenciador de tecnologia, o que reforça
                                 meu compromisso com o aprendizado contínuo e o compartilhamento de conhecimento.</p>
@@ -183,6 +180,7 @@
                                     <span>Flask</span>
                                     <span>APIs</span>
                                     <span>Express</span>
+                                    <span>Firebase</span>
                                     <span>REST</span>
                                 </div>
                             </div>
@@ -197,7 +195,6 @@
                                     <span>MongoDB</span>
                                     <span>SQLite</span>
                                     <span>PostgreSQL</span>
-                                    <span>Firebase</span>
                                 </div>
                             </div>
                             <div class="skills-box">
@@ -262,11 +259,6 @@
                         <i class="fa-solid fa-building"></i>
                         <h3 style="text-align: center;">Mentor - Workshop Figma - 2ª Edição</h3>
                         <label>Senai São Paulo (2024)</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="fa-solid fa-microscope"></i>
-                        <h3 style="text-align: center;">Pesquisador PIBIC/PIVIC</h3>
-                        <label>Iniciação Científica - Prodmais UMC (2025-Atual)</label>
                     </div>
                 </div>
             </section>
@@ -343,14 +335,6 @@
                         <h3>Recitativos CCB</h3>
                         <label>Contador para Auxiliares</label>
                         <a href="https://centralccb.netlify.app/" target="_blank" class="project-btn">Visitar
-                            Projeto</a>
-                    </div>
-
-                    <div class="project-box2">
-                        <i class="fa-brands fa-wordpress"></i>
-                        <h3>Rádio SAT FM</h3>
-                        <label>Site Institucional - Estágio WordPress</label>
-                        <a href="https://radiosatfm.com.br/home/" target="_blank" class="project-btn">Visitar
                             Projeto</a>
                     </div>
 
@@ -498,53 +482,14 @@
                         </div>
                     </div>
                     <div class="project-box3">
-                        <img src="IMAGE/certificados/fiap.jpg" alt="Conexão Muralis - MIA">
+                        <img src="IMAGE/certificados/murallis.png" alt="Conexão Muralis - MIA">
                         <h3>FIAP - Connect Summit</h3>
-                        <div class="skills-list">
+                        <div class="skills-list"
                             <p>Estratégia de Inteligência Artificial</p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- -------------- DEPOIMENTOS ---------------- -->
-
-            <section class="section" id="testimonials">
-                <div class="top-header">
-                    <h1>Depoimentos</h1>
-                    <span>O que meus clientes dizem sobre meu trabalho</span>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-control">
-                            <form id="testimonialForm" action="https://api.web3forms.com/submit" method="POST">
-                                <!-- Web3Forms Access Key -->
-                                <input type="hidden" name="access_key" value="6fcc2d3d-5e0e-45d1-8796-744e52a1c64b" />
-                                <!-- Redirecionamento desabilitado -->
-                                <input type="hidden" name="redirect" value="">
-                                <!-- Nome do Email -->
-                                <input type="hidden" name="from_name" value="Portfolio | Novo Depoimento Recebido">
-
-                                <div class="form-inputs">
-                                    <input type="text" name="name" class="input-field" placeholder="Seu Nome" required />
-                                    <input type="text" name="company" class="input-field" placeholder="Empresa/Cargo (opcional)" />
-                                </div>
-                                <div class="text-area">
-                                    <textarea name="testimonial" placeholder="Deixe seu depoimento, recomendação ou elogio sobre meu trabalho..." required></textarea>
-                                </div>
-                                <div class="form-button">
-                                    <button type="submit" class="btn" id="testimonialButton">
-                                        Enviar Depoimento <i class="uil uil-star"></i>
-                                    </button>
-                                </div>
-                                <p id="testimonialResponseMessage" class="hidden"></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- -------------- CONTATO ---------------- -->
 
             <section class="section" id="contact">
                 <div class="top-header">
@@ -611,9 +556,6 @@
                     </li>
                     <li class="footer_menu_list">
                         <a href="#certifications">Certificações</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#testimonials">Depoimentos</a>
                     </li>
                     <li class="footer_menu_list">
                         <a href="#contact">Contato</a>
