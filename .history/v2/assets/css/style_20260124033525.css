@@ -1561,6 +1561,30 @@ section {
         flex-direction: column;
     }
 
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .contact-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-item i {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
