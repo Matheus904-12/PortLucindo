@@ -8,7 +8,7 @@ Portfólio profissional moderno e responsivo desenvolvido para apresentar meus p
 
 ## ✨ Versão 2.0 (Atual)
 
-**🌐 Deploy Netlify:** [matheuslucindo.netlify.app](https://matheuslucindo.netlify.app)
+**🌐 Deploy Netlify:** [lucindoporto.netlify.app](https://lucindoporto.netlify.app)
 
 ### 🎨 Características Principais
 
@@ -173,22 +173,6 @@ Para personalizar o portfólio, edite o arquivo `v2/data/portfolio-data.json` co
 
 ⭐ **Disponível para trabalho e colaborações!** Entre em contato para discutirmos oportunidades.
 
-- **Credly:** [matheus-lucindo](https://www.credly.com/users/matheus-lucindo/badges#credly)
-- **Currículo Lattes:** [CNPq Lattes](https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=53217E03D11D285AD6BAD12311586B96)
-- **GitHub:** [Matheus904-12](https://github.com/Matheus904-12)
-## Depoimentos
-Trabalhei com você e gostaria de deixar uma recomendação? Acesse meu portfólio e deixe seu depoimento na seção de Depoimentos! Sua opinião é muito importante para mim.
-
-## Currículo
-Você pode acessar meu currículo completo em PDF neste repositório:
-
-[CV de Matheus Lucindo dos Santos.pdf](./PDF/CV%20de%20Matheus%20Lucindo%20dos%20Santos.pdf)
-
----
-
-Fique à vontade para explorar meus projetos, deixar seu depoimento, baixar meu currículo e entrar em contato para oportunidades, parcerias ou dúvidas!
-Fique à vontade para explorar meus projetos, baixar meu currículo e entrar em contato para oportunidades, parcerias ou dúvidas!
-
-Obrigado pela visita!
+**Obrigado pela visita!** 🚀
 
 Matheus Lucindo
