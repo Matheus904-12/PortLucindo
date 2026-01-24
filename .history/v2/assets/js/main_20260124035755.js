@@ -496,8 +496,8 @@ function initContactForm() {
                 // Reset form
                 elements.contactForm.reset();
                 
-                // Show alert
-                alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+                // Show custom modal
+                showSuccessModal();
                 
                 // Reset button after 3 seconds
                 setTimeout(() => {
@@ -513,7 +513,7 @@ function initContactForm() {
             submitButton.innerHTML = '<i class="fas fa-times"></i> Erro!';
             submitButton.style.background = '#f44336';
             
-            alert('Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato diretamente por email: matheuslucindo904@gmail.com');
+            showErrorModal('Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato diretamente por email: matheuslucindo904@gmail.com');
             
             // Reset button after 3 seconds
             setTimeout(() => {
@@ -555,6 +555,54 @@ function init() {
     loadData();
     updateDynamicDates();
 }
+
+// ============================================
+// MODAL FUNCTIONS
+// ============================================
+function showSuccessModal() {
+    const modal = document.getElementById('successModal');
+    if (modal) {
+        modal.classList.add('active');
+    }
+}
+
+function showErrorModal(message) {
+    const modal = document.getElementById('successModal');
+    if (modal) {
+        // Update modal content for error
+        const icon = modal.querySelector('.modal-icon i');
+        const title = modal.querySelector('h2');
+        const text = modal.querySelector('p');
+        
+        icon.className = 'fas fa-times-circle';
+        title.textContent = 'Erro ao Enviar';
+        text.textContent = message;
+        
+        modal.classList.add('active');
+        
+        // Reset modal content after closing
+        setTimeout(() => {
+            icon.className = 'fas fa-check-circle';
+            title.textContent = 'Mensagem Enviada!';
+            text.textContent = 'Obrigado pelo contato! Recebi sua mensagem e responderei em breve.';
+        }, 500);
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('successModal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('successModal');
+    if (e.target === modal) {
+        closeModal();
+    }
+});
 
 // ============================================
 // UPDATE DYNAMIC DATES (AGE AND COPYRIGHT YEAR)
