@@ -478,25 +478,17 @@ function initContactForm() {
         submitButton.disabled = true;
         submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
         
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
+        // Prepare form data for Netlify
+        const formData = new FormData(elements.contactForm);
 
         try {
-            const response = await fetch('send-email.php', {
+            const response = await fetch('/', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
             });
 
-            const result = await response.json();
-
-            if (result.success) {
+            if (response.ok) {
                 // Show success message
                 submitButton.innerHTML = '<i class="fas fa-check"></i> Enviado!';
                 submitButton.style.background = '#4caf50';
@@ -514,14 +506,14 @@ function initContactForm() {
                     submitButton.disabled = false;
                 }, 3000);
             } else {
-                throw new Error(result.message || 'Erro ao enviar mensagem');
+                throw new Error('Erro ao enviar mensagem');
             }
         } catch (error) {
             console.error('Error:', error);
             submitButton.innerHTML = '<i class="fas fa-times"></i> Erro!';
             submitButton.style.background = '#f44336';
             
-            alert('Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato diretamente por email.');
+            alert('Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato diretamente por email: matheuslucindo904@gmail.com');
             
             // Reset button after 3 seconds
             setTimeout(() => {
