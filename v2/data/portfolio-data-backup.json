@@ -1,0 +1,241 @@
+{
+  "personal": {
+    "name": "Matheus Lucindo",
+    "title": "Desenvolvedor Web & Software | Full Stack",
+    "location": "Ferraz de Vasconcelos, São Paulo, Brasil",
+    "email": "matheuslucindo904@gmail.com",
+    "phone": "+55 11 99999-9999",
+    "bio": "Sou Analista e Desenvolvedor de Software com foco em Desenvolvimento Web Full Stack. Aos 19 anos, minha trajetória é marcada pela paixão por tecnologia combinada com soft skills que considero essenciais: comunicação clara, organização, pontualidade e inteligência emocional. Atualmente, sou graduando em Análise e Desenvolvimento de Sistemas na Universidade de Mogi das Cruzes (UMC), onde participo de um projeto de Iniciação Científica voltado para o setor privado.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/matheus-lucindo-b35b68190/",
+      "github": "https://github.com/Matheus904-12",
+      "instagram": "https://www.instagram.com/matheus_lucindo/",
+      "youtube": "https://www.youtube.com/channel/UCRWCQiwc3OvBcikT3Fq2iEA",
+      "credly": "https://www.credly.com/users/matheus-lucindo/badges",
+      "lattes": "https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=53217E03D11D285AD6BAD12311586B96"
+    }
+  },
+
+  "stats": {
+    "projectsCompleted": 20,
+    "yearsExperience": 3,
+    "happyClients": 15,
+    "linkedinFollowers": 1462,
+    "linkedinConnections": 500
+  },
+
+  "expertise": [
+    {
+      "icon": "fas fa-code",
+      "title": "Full Stack Development",
+      "description": "Desenvolvimento completo de aplicações web, desde o front-end até o back-end. Experiência com arquitetura MVC, APIs RESTful e integração de sistemas complexos.",
+      "skills": ["HTML5", "CSS3", "JavaScript", "React.js", "Vue.js", "Node.js", "TypeScript"]
+    },
+    {
+      "icon": "fab fa-python",
+      "title": "Python Development",
+      "description": "Construção de sistemas backend robustos com Python. Experiência com FastAPI, Django, Flask e integração com bancos de dados relacionais e não-relacionais.",
+      "skills": ["Python", "FastAPI", "Django", "Flask", "Pydantic", "Data Analysis"]
+    },
+    {
+      "icon": "fas fa-database",
+      "title": "Database & Infrastructure",
+      "description": "Experiência em arquitetura de dados, modelagem de banco de dados e infraestrutura cloud. Implementação de padrões como Dual Write para garantir integridade dos dados.",
+      "skills": ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis", "Cloud Firestore"]
+    },
+    {
+      "icon": "fab fa-wordpress",
+      "title": "WordPress Development",
+      "description": "Desenvolvimento e customização de sites WordPress, incluindo migração de servidores, configuração de infraestrutura e otimização de performance.",
+      "skills": ["WordPress", "WooCommerce", "cPanel", "SMTP", "PHP", "MySQL"]
+    },
+    {
+      "icon": "fas fa-mobile-alt",
+      "title": "Responsive & Modern UI",
+      "description": "Criação de interfaces modernas e responsivas com foco em experiência do usuário. Utilização de Design Systems e frameworks modernos para garantir consistência visual.",
+      "skills": ["Figma", "Bootstrap", "Tailwind CSS", "Material-UI", "Zendesk Garden", "Design Systems"]
+    },
+    {
+      "icon": "fas fa-chart-line",
+      "title": "Testing & DevOps",
+      "description": "Implementação de testes automatizados e pipelines CI/CD. Experiência com metodologias ágeis e boas práticas de desenvolvimento de software.",
+      "skills": ["Cypress", "GitHub Actions", "Docker", "Git", "Agile", "Scrum"]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Prodmais - Sistema de Gestão Científica",
+      "category": "Iniciação Científica",
+      "description": "Ferramenta de gestão e extração de dados focada na produção científica. Agrega, organiza e dá visibilidade à produção acadêmica de pesquisadores, utilizando dados da Plataforma Lattes (CNPq) com dashboards de Business Intelligence.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      "tags": ["PHP", "JavaScript", "MySQL", "Business Intelligence", "Lattes API"],
+      "link": "https://github.com/Matheus904-12/Prodmais",
+      "github": "https://github.com/Matheus904-12/Prodmais"
+    },
+    {
+      "id": 2,
+      "title": "Mini Hub de Atendimento Zendesk",
+      "category": "Full Stack",
+      "description": "Simulação de arquitetura para o Zendesk Channel Framework. Sistema com backend Python + FastAPI, arquitetura Dual Write (PostgreSQL + MongoDB) e frontend React com TypeScript usando Zendesk Garden Design System.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+      "tags": ["Python", "FastAPI", "React", "TypeScript", "PostgreSQL", "MongoDB"],
+      "link": "https://github.com/Matheus904-12",
+      "github": "https://github.com/Matheus904-12"
+    },
+    {
+      "id": 3,
+      "title": "ConectaTEA - MVP Social",
+      "category": "Web Development",
+      "description": "Plataforma de conexão para comunidade TEA (Transtorno do Espectro Autista). Sistema completo com gestão clínica, busca de especialistas, teleatendimento e recursos educativos. Projeto coordenado com foco em impacto social.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+      "tags": ["HTML5", "CSS3", "JavaScript", "Figma", "Git", "Netlify"],
+      "link": "https://conectatea.netlify.app",
+      "github": "https://github.com/Matheus904-12/ConectaTEA"
+    },
+    {
+      "id": 4,
+      "title": "Golden Movie Studio",
+      "category": "Web Development",
+      "description": "Aplicação web moderna para descoberta de filmes com recomendações automáticas, busca inteligente usando OMDb API, cadastro de usuários e testes automatizados com Cypress. Interface responsiva com tema cinematográfico.",
+      "image": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
+      "tags": ["JavaScript", "HTML5", "CSS3", "Cypress", "OMDb API", "AWS Lambda"],
+      "link": "https://github.com/Matheus904-12/gms-test",
+      "github": "https://github.com/Matheus904-12/gms-test"
+    },
+    {
+      "id": 5,
+      "title": "Rádio SAT FM - Website Institucional",
+      "category": "WordPress",
+      "description": "Desenvolvimento completo do site institucional incluindo migração de infraestrutura, resolução de conflitos de banco de dados MySQL, configuração de e-mails corporativos SMTP e integração com streaming ao vivo.",
+      "image": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+      "tags": ["WordPress", "MySQL", "cPanel", "SMTP", "PHP", "Google Analytics"],
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 6,
+      "title": "E-Commerce Cristais Gold Lar",
+      "category": "Full Stack",
+      "description": "Plataforma completa de e-commerce com arquitetura MVC, programação orientada a objetos, sistema de pagamentos, gestão de produtos e painel administrativo. Desenvolvimento freelance com foco em escalabilidade.",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+      "tags": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "MVC", "POO"],
+      "link": "#",
+      "github": "https://github.com/Matheus904-12/EcommerceWeb"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "id": 1,
+      "company": "Rádio SAT FM",
+      "logo": "📻",
+      "role": "Gerente - Paulinho Pereira",
+      "text": "Matheus é um excelente profissional, muito atencioso e educado. Todo o sucesso do mundo pra você. Estamos super satisfeitos pelo site que você desenvolveu. Muito obrigado e recomendo o seu trabalho!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "company": "Universidade de Mogi das Cruzes",
+      "logo": "🎓",
+      "role": "Professor - Pedro Miho",
+      "text": "Coordenar o desenvolvimento do ConectaTEA foi uma experiência incrível. Matheus demonstrou excelente liderança técnica e visão de produto, transformando um projeto acadêmico em uma solução real com potencial de impacto social.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "company": "SESI São Paulo",
+      "logo": "🏫",
+      "role": "Programa Influencer de Tecnologia",
+      "text": "Como Influencer de Tecnologia, Matheus mostrou grande capacidade de engajar estudantes e compartilhar conhecimento. Sua dedicação em difundir práticas tecnológicas e auxiliar nas aulas foi fundamental para o programa.",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "company": "Instituto Unidos para Transformar",
+      "logo": "💼",
+      "role": "Cliente - Projeto Cielo",
+      "text": "Implementação impecável do sistema de pagamento Cielo. Matheus entendeu perfeitamente os requisitos técnicos e entregou uma solução backend robusta e segura para nossa ONG.",
+      "rating": 5
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Autenticar e autorizar identidades de usuário no GitHub",
+      "issuer": "Microsoft Learning",
+      "date": "Janeiro 2026",
+      "image": "../IMAGE/certificados/cert1.jpg"
+    },
+    {
+      "title": "Codificar com o GitHub Codespaces",
+      "issuer": "Microsoft Learning",
+      "date": "Janeiro 2026",
+      "image": "../IMAGE/certificados/cert2.jpg"
+    },
+    {
+      "title": "Múltiplas Certificações em Tecnologia",
+      "issuer": "Diversos (41+ certificados)",
+      "date": "2023-2026",
+      "image": "../IMAGE/certificados/cert3.jpg",
+      "link": "https://www.credly.com/users/matheus-lucindo/badges"
+    }
+  ],
+
+  "skills": {
+    "frontend": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React.js", "Vue.js", "jQuery", "Bootstrap", "Tailwind CSS", "Figma"],
+    "backend": ["Node.js", "Python", "PHP", "Django", "Flask", "FastAPI", "Express.js", "REST APIs", "WordPress"],
+    "database": ["MySQL", "PostgreSQL", "MongoDB", "Cloud Firestore", "Firebase", "Redis", "SQLite"],
+    "tools": ["Git", "GitHub", "Docker", "Cypress", "GitHub Actions", "VS Code", "Figma", "Canva", "Postman", "cPanel"],
+    "other": ["Agile", "Scrum", "CI/CD", "Testing", "SEO", "Web Accessibility", "Business Intelligence", "Metodologias Ágeis"]
+  },
+
+  "experience": [
+    {
+      "company": "Universidade de Mogi das Cruzes",
+      "position": "Estudante de Iniciação Científica - PIBIC",
+      "period": "Set 2025 - Presente",
+      "description": "Desenvolvimento do Prodmais, ferramenta de gestão e extração de dados de produção científica. Trabalho com agregação de dados Lattes, Business Intelligence, dashboards analíticos e integração com APIs acadêmicas."
+    },
+    {
+      "company": "Rádio SAT FM",
+      "position": "Estagiário WordPress (Não Remunerado)",
+      "period": "Out 2025 - Nov 2025",
+      "description": "Migração completa do site, resolução de conflitos de banco de dados MySQL, configuração de infraestrutura de e-mails SMTP, automação de postagens e desenvolvimento de layout moderno com streaming ao vivo."
+    },
+    {
+      "company": "Cristais Gold Lar",
+      "position": "Desenvolvedor Web Freelancer",
+      "period": "Fev 2025 - Ago 2025",
+      "description": "Criação de plataforma e-commerce completa com arquitetura MVC, programação orientada a objetos, sistema de pagamentos e painel administrativo."
+    },
+    {
+      "company": "Instituto Unidos para Transformar",
+      "position": "Desenvolvedor Backend WordPress",
+      "period": "Jul 2025",
+      "description": "Implementação de sistema de pagamento Cielo via API, integração com Merchant Key e Merchant ID, desenvolvimento de aplicação backend para ONG."
+    },
+    {
+      "company": "SESI São Paulo",
+      "position": "Influencer de Tecnologia",
+      "period": "Jan 2024 - Dez 2024",
+      "description": "Difusão de tecnologias digitais, auxílio em aulas com recursos tecnológicos, suporte em laboratórios de informática, promoção do letramento digital e trabalho colaborativo com equipe pedagógica."
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Universidade de Mogi das Cruzes (UMC)",
+      "period": "2025 - 2026",
+      "description": "Curso Superior de Tecnologia focado em programação, bancos de dados, arquitetura de sistemas e desenvolvimento de soluções empresariais."
+    },
+    {
+      "degree": "Técnico em Desenvolvimento de Sistemas",
+      "institution": "SENAI São Paulo",
+      "period": "2023 - 2024",
+      "description": "Formação técnica em desenvolvimento web e software, incluindo MySQL, React Native, PHP, Firebase, JavaScript, ReactJS e NodeJS. Representante de Sala por 2 anos."
+    }
+  ]
+}

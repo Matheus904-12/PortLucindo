@@ -1,0 +1,258 @@
+{
+  "personal": {
+    "name": "Matheus Lucindo",
+    "title": "Desenvolvedor Full Stack Júnior @ BCR.CX | Analista de Software",
+    "location": "Ferraz de Vasconcelos, São Paulo, Brasil",
+    "age": 19,
+    "email": "matheuslucindo904@gmail.com",
+    "phone": "+55 11 97166-6817",
+    "bio": "Atualmente contratado como Desenvolvedor Full Stack Júnior na BCR.CX, onde atuo com desenvolvimento de soluções para gestão de experiência do cliente. Sou Analista e Desenvolvedor de Software com foco em Desenvolvimento Web Full Stack. Aos 19 anos, minha trajetória é marcada pela paixão por tecnologia combinada with soft skills que considero essenciais: comunicação clara, organização, pontualidade e inteligência emocional. Atualmente, sou graduando em Análise e Desenvolvimento de Sistemas na Universidade de Mogi das Cruzes (UMC), onde aprofundo meus conhecimentos teóricos e práticos sobre engenharia de software e arquitetura de soluções. Recentemente, fui aprovado para um projeto de Iniciação Científica na UMC voltado para o setor privado, uma conquista que reflete meu interesse profundo por pesquisa e desenvolvimento tecnológico. Tenho perfil profissional com visão analítica de software, enfrentando desafios com serenidade e eficiência. Acredito que o bom humor e a calma são fundamentais para manter a clareza na resolução de problemas complexos. Possuo experiência prática na criação de softwares e aplicações Web utilizando HTML, CSS, JavaScript, PHP, MySQL, Node.js e WordPress. Tenho um forte interesse na dualidade entre a Carreira Acadêmica (focada no avanço do conhecimento) e a Governança de TI (focada em gestão estratégica), buscando explorar esses dois caminhos para evoluir profissionalmente e entregar resultados consistentes.",
+    "techStack": "HTML, CSS, JavaScript, PHP, MySQL, Node.js, WordPress",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/matheus-lucindo-b35b68190/",
+      "github": "https://github.com/Matheus904-12",
+      "instagram": "https://www.instagram.com/matheus_lucindo/",
+      "youtube": "https://www.youtube.com/channel/UCRWCQiwc3OvBcikT3Fq2iEA",
+      "credly": "https://www.credly.com/users/matheus-lucindo/badges",
+      "lattes": "https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=3185F63F636388EBE026AB87A98FDED0#"
+    }
+  },
+
+  "stats": {
+    "projectsCompleted": 60,
+    "yearsExperience": 3,
+    "githubRepos": 60,
+    "linkedinFollowers": 1462,
+    "linkedinConnections": 500
+  },
+
+  "expertise": [
+    {
+      "icon": "fas fa-code",
+      "title": "Full Stack Development",
+      "description": "Desenvolvimento completo de aplicações web, desde o front-end até o back-end. Experiência com arquitetura MVC, APIs RESTful e integração de sistemas complexos.",
+      "skills": ["HTML5", "CSS3", "JavaScript", "React.js", "Vue.js", "Node.js", "TypeScript", "PHP", "Python"]
+    },
+    {
+      "icon": "fas fa-database",
+      "title": "Database & Infrastructure",
+      "description": "Modelagem e gestão de bancos de dados relacionais e NoSQL. Experiência prática em arquitetura de dados, otimização de queries e integração com aplicações web.",
+      "skills": ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Cloud Firestore"]
+    },
+    {
+      "icon": "fab fa-wordpress",
+      "title": "WordPress Development",
+      "description": "Desenvolvimento e customização de sites WordPress, incluindo migração de servidores, configuração de infraestrutura e otimização de performance.",
+      "skills": ["WordPress", "WooCommerce", "cPanel", "SMTP", "PHP", "MySQL"]
+    },
+    {
+      "icon": "fas fa-mobile-alt",
+      "title": "Responsive & Modern UI",
+      "description": "Criação de interfaces modernas e responsivas com foco em experiência do usuário. Utilização de Design Systems e frameworks modernos para garantir consistência visual.",
+      "skills": ["Figma", "Bootstrap", "Tailwind CSS", "Material-UI", "Zendesk Garden", "Design Systems"]
+    },
+    {
+      "icon": "fas fa-chart-line",
+      "title": "Testing & DevOps",
+      "description": "Implementação de testes automatizados e pipelines CI/CD. Experiência com metodologias ágeis e boas práticas de desenvolvimento de software.",
+      "skills": ["Cypress", "GitHub Actions", "Docker", "Git", "Agile", "Scrum"]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "CX Integration Lab",
+      "category": "Full Stack | Hub de Estudos",
+      "description": "Laboratório pessoal de integração desenvolvido para estudo das tecnologias utilizadas pela BCR.CX. Projeto completo de integração de sistemas com foco em experiência do cliente, utilizando arquiteturas modernas e boas práticas de desenvolvimento. Ainda não envolve trabalho oficial para a empresa.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "tags": ["Full Stack", "Python", "TypeScript", "FastAPI", "ORM", "Pydantic", "Docker", "Git", "PyMongo"],
+      "link": "https://github.com/Matheus904-12/cx-integration-lab",
+      "github": "https://github.com/Matheus904-12/cx-integration-lab"
+    },
+    {
+      "title": "Prodmais",
+      "category": "Iniciação Científica | UMC",
+      "description": "Ferramenta de gestão científica que agrega e organiza produção acadêmica de pesquisadores. Desenvolvido como projeto PIBIC na UMC, integra dados da Plataforma Lattes com Business Intelligence para dar visibilidade à pesquisa brasileira.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "tags": ["PHP", "JavaScript", "MySQL", "Business Intelligence", "Lattes API"],
+      "link": "https://github.com/Matheus904-12/Prodmais",
+      "github": "https://github.com/Matheus904-12/Prodmais"
+    },
+    {
+      "title": "ConectaTEA",
+      "category": "Projeto Social | Acadêmico",
+      "description": "Plataforma que conecta famílias e profissionais da comunidade TEA. Sistema completo com gestão clínica, busca de especialistas e teleatendimento. Projeto coordenado pelo Professor Pedro Miho na UMC.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+      "tags": ["HTML5", "CSS3", "JavaScript", "Figma", "Git"],
+      "link": "https://conectatea.netlify.app",
+      "github": "https://github.com/Matheus904-12/ConectaTEA"
+    },
+    {
+      "title": "Painel de Gastos",
+      "category": "Gestão Financeira",
+      "description": "Sistema inteligente de controle financeiro pessoal. Dashboard interativo com gráficos, categorização automática de despesas e relatórios mensais. Solução prática para quem quer organizar suas finanças.",
+      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+      "tags": ["JavaScript", "HTML5", "CSS3", "LocalStorage", "Charts.js"],
+      "link": "https://github.com/Matheus904-12/Painel-de-Gastos",
+      "github": "https://github.com/Matheus904-12/Painel-de-Gastos"
+    },
+    {
+      "title": "Suburban - CPTM Tracker",
+      "category": "Mobilidade Urbana",
+      "description": "Visualizador em tempo real dos trens da CPTM em São Paulo. Integração com APIs públicas de transporte para mostrar posições, horários e status das linhas. Útil para quem depende do trem no dia a dia.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/CPTM_train.jpg",
+      "tags": ["JavaScript", "HTML5", "CSS3", "API REST", "Real-time"],
+      "link": "https://github.com/Matheus904-12/Suburban",
+      "github": "https://github.com/Matheus904-12/Suburban"
+    },
+    {
+      "title": "Golden Movie Studio",
+      "category": "Entretenimento",
+      "description": "Descubra filmes incríveis! App com recomendações automáticas usando OMDb API, busca inteligente e testes automatizados com Cypress. Interface limpa e intuitiva para cinéfilos.",
+      "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop",
+      "tags": ["JavaScript", "Cypress", "OMDb API", "AWS Lambda"],
+      "link": "https://github.com/Matheus904-12/gms-test",
+      "github": "https://github.com/Matheus904-12/gms-test"
+    },
+    {
+      "title": "E-Commerce Montink",
+      "category": "E-Commerce | ERP",
+      "description": "Mini sistema ERP completo para e-commerce. Gestão de produtos, vendas, estoque e clientes em uma interface integrada. Solução prática para pequenos e médios negócios online.",
+      "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop",
+      "tags": ["PHP", "MySQL", "JavaScript", "MVC"],
+      "link": "https://github.com/Matheus904-12/EcommerceMontink",
+      "github": "https://github.com/Matheus904-12/EcommerceMontink"
+    },
+    {
+      "title": "SunnyThings App",
+      "category": "E-Commerce",
+      "description": "App moderno de compras online com interface clean e experiência fluida. Design responsivo, carrinho inteligente e checkout simplificado. Focado em UX para facilitar a vida do usuário.",
+      "image": "https://blog.nakednuts.com.br/wp-content/uploads/2020/11/aplicativo-para-supermercado-por-que-investir-1024x640.jpg",
+      "tags": ["JavaScript", "React", "CSS3", "UX/UI"],
+      "link": "https://sunny-things.vercel.app",
+      "github": "https://github.com/Matheus904-12/SunnyThings"
+    },
+    {
+      "title": "E-Commerce Cristais Gold Lar",
+      "category": "E-Commerce Completo",
+      "description": "Loja virtual completa com arquitetura MVC e POO. Sistema robusto de pagamentos, painel administrativo e gestão de produtos. Uma solução profissional para e-commerce.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "tags": ["PHP", "MySQL", "JavaScript", "MVC", "POO"],
+      "link": "https://github.com/Matheus904-12/EcommerceWeb",
+      "github": "https://github.com/Matheus904-12/EcommerceWeb"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "company": "Rádio SAT FM",
+      "logo": "📻",
+      "role": "Gerente - Paulinho Pereira",
+      "text": "Matheus é um excelente profissional, muito atencioso e educado. Todo o sucesso do mundo pra você. Estamos super satisfeitos pelo site que você desenvolveu. Muito obrigado e recomendo o seu trabalho!",
+      "rating": 5
+    },
+    {
+      "company": "Universidade de Mogi das Cruzes",
+      "logo": "🎓",
+      "role": "Professor - Pedro Miho",
+      "text": "Coordenar o desenvolvimento do ConectaTEA foi uma experiência incrível. Matheus demonstrou excelente liderança técnica e visão de produto, transformando um projeto acadêmico em uma solução real com potencial de impacto social.",
+      "rating": 5
+    },
+    {
+      "company": "SESI São Paulo",
+      "logo": "🏫",
+      "role": "Programa Influencer de Tecnologia",
+      "text": "Como trainee no programa Influencer de Tecnologia, Matheus mostrou grande capacidade de comunicação e compartilhamento de conhecimento com a comunidade estudantil.",
+      "rating": 5
+    },
+    {
+      "company": "SENAI São Paulo",
+      "logo": "🎓",
+      "role": "Workshop Figma",
+      "text": "Matheus foi mentor em 2 edições do Workshop Figma, demonstrando domínio da ferramenta e excelente didática ao ensinar design de interfaces aos alunos.",
+      "rating": 5
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Universidade de Mogi das Cruzes (UMC)",
+      "degree": "Curso Superior de Tecnologia (CST)",
+      "course": "Análise e Desenvolvimento de Sistemas",
+      "period": "Janeiro 2025 - Dezembro 2026",
+      "status": "Cursando",
+      "description": "O curso forma profissionais capacitados para criar, gerenciar e manter sistemas e softwares. Com foco em programação, bancos de dados, lógica e inovação tecnológica, prepara os alunos para atender às demandas do mercado de TI, participando no desenvolvimento de aplicativos, sites e soluções empresariais. Participação em projeto PIBIC de Iniciação Científica.",
+      "skills": ["Redes e Segurança", "Cisco Networking", "Docker", "NoSQL", "API REST", "PHP"]
+    },
+    {
+      "institution": "SENAI São Paulo",
+      "degree": "Curso Técnico Integrado",
+      "course": "Desenvolvimento de Sistemas",
+      "period": "Janeiro 2023 - Dezembro 2024",
+      "status": "Concluído",
+      "note": "Representante de Sala por 2 anos",
+      "description": "Formação técnica completa focada em analisar, desenvolver, projetar, implementar e atualizar sistemas de informação. Ampla experiência prática com MySQL, React Native, PHP, Firebase, JavaScript, ReactJS, NodeJS, HTML, CSS, GitHub, EmailJS e Microsoft PowerBI (Verificação de Dados e Dashboards).",
+      "skills": ["FrontEnd", "Backend", "Metodologias Agile", "Figma", "Gestão de Projetos", "Web Design", "Arquitetura MVC", "Testes de API", "SQL"]
+    },
+    {
+      "institution": "SESI São Paulo",
+      "degree": "Ensino Médio",
+      "course": "Ensino Médio Regular",
+      "period": "Março 2022 - Dezembro 2024",
+      "status": "Concluído",
+      "note": "Média Geral - 9,5",
+      "description": "Ensino médio regular com participação no Projeto Influencer Tecnologia - Especialização em Maquinários e Computadores do SESI 240. Desenvolvimento de habilidades em tecnologia da informação, edição de vídeo e Microsoft Training.",
+      "skills": ["Microsoft Training", "Projeto Influencer", "Microsoft MOS", "Tecnologia da Informação", "Edição de Vídeo"]
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "BCR.CX",
+      "position": "Desenvolvedor Junior Full Stack",
+      "period": "Janeiro 2025 - Atual",
+      "location": "Remoto",
+      "description": "Hub de estudos e laboratório pessoal para exploração de tecnologias utilizadas pela BCR.CX. Ainda não desenvolvo projetos oficiais da empresa, mas dedico tempo ao aprendizado contínuo de arquiteturas modernas, integração de sistemas e boas práticas de desenvolvimento full stack, preparando-me para contribuir efetivamente no futuro.",
+      "highlight": true
+    },
+    {
+      "company": "Universidade de Mogi das Cruzes (UMC)",
+      "position": "Pesquisador PIBIC - Prodmais",
+      "period": "Janeiro 2025 - Atual",
+      "location": "Mogi das Cruzes, SP",
+      "description": "Projeto de Iniciação Científica voltado para o setor privado. Desenvolvimento de ferramenta de gestão científica que agrega, organiza e dá visibilidade à produção acadêmica de pesquisadores, utilizando dados da Plataforma Lattes (CNPq) com Business Intelligence."
+    },
+    {
+      "company": "Rádio SAT FM",
+      "position": "Estagiário WordPress (Não Remunerado)",
+      "period": "Outubro 2025 - Novembro 2025 · 2 meses",
+      "location": "Suzano, SP · Remoto",
+      "description": "Fui muito além do desenvolvimento front-end. Realizei a migração completa do site para o domínio oficial, resolvi conflitos críticos de MySQL e permissões no cPanel. Implementei fluxos de postagem ágil para jornalismo, restabeleci toda infraestrutura de e-mails corporativos via SMTP e entreguei um layout moderno com streaming ao vivo. Este projeto me ensinou que TI é sobre persistência, diagnóstico preciso e entregar valor real para o negócio.",
+      "skills": ["Google Analytics", "WordPress Development", "MySQL", "cPanel", "SMTP"]
+    },
+    {
+      "company": "Instituto Unidos para Transformar (myiupt.com)",
+      "position": "Desenvolvedor Backend WordPress (Freelance)",
+      "period": "Julho 2025 · 1 mês",
+      "location": "São Paulo, SP · Remoto",
+      "description": "Indicação da Cielo para desenvolver aplicação back-end para site de ONG. Implementei método de pagamento da Cielo utilizando API com Merchant Key e Merchant ID. Integração completa com WooCommerce.",
+      "skills": ["WordPress", "WooCommerce", "PHP", "Cielo API"]
+    },
+    {
+      "company": "SESI São Paulo",
+      "position": "Influencer de Tecnologia (SESI CE 240)",
+      "period": "Janeiro 2024 - Dezembro 2024 · 1 ano",
+      "location": "Ferraz de Vasconcelos, SP · Presencial",
+      "description": "Programa Trainee de divulgação tecnológica. Compartilhei conhecimentos, engajei estudantes em tecnologia, auxiliei em aulas com recursos digitais, difundi práticas de Letramento e Cultura Digital. Trabalhei com Impressão 3D, Corte a Laser, Microsoft MOS e suporte em Laboratórios de Informática e Espaço Maker.",
+      "skills": ["Impressão 3D", "Tecnologia da Informação", "Corte a Laser", "Microsoft MOS", "Mentoria"]
+    },
+    {
+      "company": "SENAI São Paulo",
+      "position": "Participante/Mentor - Workshop Figma (2 Edições)",
+      "period": "Setembro 2023 - Setembro 2024",
+      "location": "Ferraz de Vasconcelos, SP · Presencial",
+      "description": "Mentor em 2 edições do Workshop Figma. Ensinei alunos do 1º ano do ensino médio do SESI CE240 a utilizar o Figma, com orientações práticas sobre prototipagem, design de interfaces, design colaborativo e projetos visuais básicos.",
+      "skills": ["Figma", "Mentoria", "Oratória", "Design de Interfaces"]
+    }
+  ]
+}
