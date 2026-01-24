@@ -101,6 +101,8 @@ function initNavigation() {
 // CUSTOM CURSOR
 // ============================================
 function initCursor() {
+    // Don't initialize cursor on touch devices
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
     if (!elements.cursor || !elements.cursorFollower) return;
 
     document.addEventListener('mousemove', (e) => {

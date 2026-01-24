@@ -70,7 +70,13 @@ body {
     background-color: var(--secondary-color);
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none;
+}
+
+/* Custom cursor only for desktop */
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: none;
+    }
 }
 
 /* Custom Cursor */
@@ -96,7 +102,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-@media (hover: none) {
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
     .cursor,
     .cursor-follower {
         display: none;
