@@ -28,6 +28,13 @@ describe('profile', () => {
     const ms = profile.certifications.find((c) => c.id === 'microsoft-learning')
     expect(ms?.items?.length).toBe(27)
   })
+  it('traz as 3 recomendações recebidas, com o texto íntegro', () => {
+    const nomes = profile.recommendations.map((r) => r.name)
+    expect(nomes).toEqual(['Iago Dantas', 'Flávio Francisco da Silva', 'Paulinho Pereira'])
+    const flavio = profile.recommendations.find((r) => r.name.startsWith('Flávio'))
+    expect(flavio?.text).toContain('Recomendo o Matheus para oportunidades')
+    expect(profile.recommendations.find((r) => r.name === 'Paulinho Pereira')?.text).toContain('Estamos super satisfeitos pelo site')
+  })
   it('slugs de projeto são únicos', () => {
     const slugs = profile.projects.map((p) => p.slug)
     expect(new Set(slugs).size).toBe(slugs.length)
