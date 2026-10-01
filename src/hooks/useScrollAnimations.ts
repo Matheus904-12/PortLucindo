@@ -31,7 +31,10 @@ function paralaxeDoHero() {
 
 /** A linha central da Trajetória se desenha conforme a seção passa pela tela. */
 function desenharLinhaDoTempo() {
-  gsap.fromTo('.tl-linha', { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.tl-envoltorio', start: 'top 70%', end: 'bottom 70%', scrub: true } })
+  gsap.utils.toArray<HTMLElement>('.tl-envoltorio').forEach((trilha) => {
+    const linha = trilha.querySelector('.tl-linha')
+    if (linha) gsap.fromTo(linha, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: trilha, start: 'top 70%', end: 'bottom 70%', scrub: true } })
+  })
 }
 
 function barraDeProgresso() {

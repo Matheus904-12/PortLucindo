@@ -3,7 +3,7 @@ import { Animations } from '@/components/Animations'
 import { Hero } from '@/components/Hero'
 import { Nav } from '@/components/Nav'
 import { StackMarquee } from '@/components/StackMarquee'
-import { Timeline } from '@/components/Timeline'
+import { Trajetoria } from '@/components/Trajetoria'
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <StackMarquee />
         <About />
-        <Timeline />
+        <Trajetoria />
       </main>
     </>
   )
