@@ -1,4 +1,5 @@
 import { About } from '@/components/About'
+import { Certificacoes } from '@/components/Certificacoes'
 import { Animations } from '@/components/Animations'
 import { Hero } from '@/components/Hero'
 import { Nav } from '@/components/Nav'
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Trajetoria />
         <Projects />
+        <Certificacoes />
       </main>
     </>
   )

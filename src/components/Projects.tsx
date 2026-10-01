@@ -1,6 +1,7 @@
 import { publicProfile } from '@/content/profile'
 import type { Project } from '@/content/schema'
 import { SecaoCabeca } from './SecaoCabeca'
+import { WeaveBarra } from './WeaveBarra'
 
 const STATUS: Record<Project['status'], string> = {
   producao: 'Em produção', estudo: 'Estudo', academico: 'Acadêmico', 'em-construcao': 'Em construção',
@@ -20,6 +21,7 @@ function Capa({ projeto, destaque }: { projeto: Project; destaque: boolean }) {
     <div className="capa">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={projeto.cover} width={1440} height={900} loading="lazy" decoding="async" alt={`Captura da tela inicial de ${projeto.title}`} />
+      <span className="capa-seta" aria-hidden="true">↗</span>
       {destaque && (
         // eslint-disable-next-line @next/next/no-img-element
         <img className="capa-celular" src={capaMobile(projeto.cover)} width={390} height={844} loading="lazy" decoding="async" alt="" aria-hidden="true" />
@@ -40,7 +42,7 @@ function Links({ projeto }: { projeto: Project }) {
 
 function Cartao({ projeto, indice, destaque }: { projeto: Project; indice: number; destaque: boolean }) {
   return (
-    <article className={`proj ${destaque ? 'proj-destaque' : ''}`} data-anim="subir">
+    <article className={`proj ${destaque ? 'proj-destaque' : ''}`} data-anim="inclinar">
       <Capa projeto={projeto} destaque={destaque} />
       <div className="proj-corpo">
         <p className="mono proj-meta">
@@ -85,18 +87,21 @@ function SideProjects({ projetos }: { projetos: Project[] }) {
 
 export function Projects() {
   const todos = publicProfile.projects
-  const destaques = todos.filter((p) => p.featured)
-  const comDemo = todos.filter((p) => !p.featured && p.demo)
-  const side = todos.filter((p) => !p.featured && !p.demo)
+  const emConstrucao = todos.filter((p) => p.status === 'em-construcao')
+  const publicados = todos.filter((p) => p.status !== 'em-construcao')
+  const destaques = publicados.filter((p) => p.featured)
+  const comDemo = publicados.filter((p) => !p.featured && p.demo)
+  const side = publicados.filter((p) => !p.featured && !p.demo)
   return (
     <section className="secao" id="projetos">
       <div className="container">
         <SecaoCabeca numero="03" rotulo="Projetos" titulo={<>Coisas que <em>construí</em>.</>} />
+        {emConstrucao.map((p) => <WeaveBarra key={p.slug} projeto={p} />)}
         <div className="proj-lista">
           {destaques.map((p, i) => <Cartao key={p.slug} projeto={p} indice={i} destaque />)}
         </div>
         <h3 className="mono proj-subtitulo" data-anim="subir">Outros projetos no ar <span>({comDemo.length})</span></h3>
-        <div className="proj-grade" data-anim="escalonar">
+        <div className="proj-grade">
           {comDemo.map((p, i) => <Cartao key={p.slug} projeto={p} indice={destaques.length + i} destaque={false} />)}
         </div>
         <h3 className="mono proj-subtitulo" data-anim="subir">Side projects <span>({side.length})</span></h3>

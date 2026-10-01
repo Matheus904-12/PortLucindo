@@ -11,6 +11,7 @@ import '@/styles/shell.css'
 import '@/styles/hero.css'
 import '@/styles/sections.css'
 import '@/styles/projects.css'
+import '@/styles/cards.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lucindoporto.netlify.app'),

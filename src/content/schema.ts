@@ -26,6 +26,10 @@ export const projectSchema = z.object({
   repo: z.url().optional(), demo: z.url().optional(), privateCode: z.boolean().optional(),
   /** Banco no plano gratuito (ex.: Supabase): pode estar pausado por inatividade e demorar a acordar. */
   demoMayBeAsleep: z.boolean().optional(),
+  /** Mês de início da produção, para projetos em construção. */
+  startsAt: mes.optional(),
+  /** O que o projeto faz (ou fará), em itens curtos, para o modal. */
+  highlights: z.array(z.string()).optional(),
 })
 export const milestoneSchema = z.object({ date: mes, title: z.string(), text: z.string() })
 export const recommendationSchema = z.object({

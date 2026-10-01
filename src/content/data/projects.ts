@@ -33,7 +33,14 @@ export const projects: Project[] = [
     slug: 'weave', title: 'WEAVE', kind: 'Plataforma de arquitetura', status: 'em-construcao',
     role: 'Autor',
     summary: 'Um canvas, sete visões: documento, sequência, C4, cronograma, grafo e custos calculados do mesmo estado. Em construção, com início da produção em janeiro de 2027. O protótipo no ar é uma demonstração.',
-    stack: ['TypeScript', 'React', 'GSAP', 'Go'], featured: false, cover: cover('weave'),
+    stack: ['TypeScript', 'React', 'GSAP', 'Go'], featured: false, startsAt: '2027-01',
+    highlights: [
+      'Um canvas de arquitetura com sete visões do mesmo estado: documento (SDD), sequência, C4, cronograma, grafo e custos.',
+      'Importar um repositório real e manter o canvas sincronizado com o código.',
+      'Assistente de IA que lê o canvas, a documentação e o repositório.',
+      'Exportar documentação e infraestrutura (Terraform, Docker e Kubernetes).',
+      'Conectores MCP para trazer métricas de Sentry, SonarCloud, Grafana e outras ferramentas.',
+    ],
     repo: 'https://github.com/weave-platform/weave', demo: 'https://weave-platform-neon.vercel.app',
   },
   {

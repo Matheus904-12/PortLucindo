@@ -17,8 +17,16 @@ describe('projetos', () => {
   it('projeto com demo quebrada, offline ou com login não expõe link de demo', () => {
     for (const slug of ['weatherapi', 'cerne', 'inovamold']) expect(profile.projects.find((p) => p.slug === slug)?.demo, slug).toBeUndefined()
   })
-  it('todo projeto com demo ao vivo tem capa', () => {
-    for (const p of profile.projects.filter((x) => x.demo)) expect(p.cover, p.slug).toBeTruthy()
+  it('todo projeto com demo ao vivo tem capa, exceto os em construção (que viram uma barra sem imagem)', () => {
+    for (const p of profile.projects.filter((x) => x.demo && x.status !== 'em-construcao')) expect(p.cover, p.slug).toBeTruthy()
+  })
+  it('o WEAVE é um projeto em construção, com início em jan/2027, sem capa e com a lista do que vem', () => {
+    const weave = profile.projects.find((p) => p.slug === 'weave')!
+    expect(weave.status).toBe('em-construcao')
+    expect(weave.startsAt).toBe('2027-01')
+    expect(weave.cover).toBeUndefined()
+    expect(weave.highlights?.length).toBeGreaterThanOrEqual(4)
+    expect(weave.demo).toBeTruthy()
   })
   it('projeto privado nunca expõe link de repositório', () => {
     for (const p of profile.projects.filter((x) => x.privateCode)) expect(p.repo, p.slug).toBeUndefined()

@@ -17,11 +17,6 @@
     "espera": 4000
   },
   {
-    "slug": "weave",
-    "url": "https://weave-platform-neon.vercel.app",
-    "espera": 5500
-  },
-  {
     "slug": "conectatea",
     "url": "https://conectatea.netlify.app/",
     "espera": 3500,

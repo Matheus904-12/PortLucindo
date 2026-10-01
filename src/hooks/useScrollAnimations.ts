@@ -29,6 +29,33 @@ function paralaxeDoHero() {
   gsap.to('.hero h1', { yPercent: -7, ease: 'none', scrollTrigger: gatilho })
 }
 
+const ABAIXADO = { rotateX: 8, scale: 0.95, opacity: 0.3, y: 30 }
+const NORMAL = { rotateX: 0, scale: 1, opacity: 1, y: 0 }
+
+/**
+ * O efeito da demo do WEAVE: o cartão vem do fundo "deitado", se levanta ao entrar e deita de novo ao sair.
+ * Uma única linha do tempo presa ao scroll cobre as três fases (entrada, repouso, saída).
+ */
+function inclinar(el: Element) {
+  gsap.set(el, { transformPerspective: 1100, transformOrigin: '50% 100%' })
+  const linha = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: 0.6 } })
+  linha.fromTo(el, ABAIXADO, { ...NORMAL, duration: 0.22 }).to({}, { duration: 0.56 }).to(el, { ...ABAIXADO, duration: 0.22 })
+}
+
+/** Brilho que segue o cursor nos cartões (só com mouse; em toque não existe hover). */
+function brilhoNosCartoes(): () => void {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return () => {}
+  const cartoes = gsap.utils.toArray<HTMLElement>('.proj, .cert')
+  const mover = (e: PointerEvent) => {
+    const el = e.currentTarget as HTMLElement
+    const caixa = el.getBoundingClientRect()
+    el.style.setProperty('--mx', `${e.clientX - caixa.left}px`)
+    el.style.setProperty('--my', `${e.clientY - caixa.top}px`)
+  }
+  cartoes.forEach((c) => c.addEventListener('pointermove', mover))
+  return () => cartoes.forEach((c) => c.removeEventListener('pointermove', mover))
+}
+
 /** A linha central da Trajetória se desenha conforme a seção passa pela tela. */
 function desenharLinhaDoTempo() {
   gsap.utils.toArray<HTMLElement>('.tl-envoltorio').forEach((trilha) => {
@@ -57,6 +84,8 @@ export function useScrollAnimations() {
       desenharLinhaDoTempo()
       gsap.utils.toArray<Element>('[data-anim="subir"]').forEach(subir)
       gsap.utils.toArray<Element>('[data-anim="escalonar"]').forEach(escalonar)
+      gsap.utils.toArray<Element>('[data-anim="inclinar"]').forEach(inclinar)
+      return brilhoNosCartoes()
     })
     document.fonts.ready.then(() => ScrollTrigger.refresh())
     return () => { media.revert(); parar() }
