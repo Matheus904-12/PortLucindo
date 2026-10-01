@@ -26,7 +26,7 @@ function CartaoDeTrilha({ trilha, destaque, aoAbrir }: { trilha: Trilha; destaqu
       <p className="mono cert-emissor">{trilha.issuer}</p>
       <p className="cert-numero" aria-hidden="true">{trilha.items.length}</p>
       <h3>{trilha.title}</h3>
-      <button type="button" className="btn btn-fantasma btn-pequeno" onClick={aoAbrir} aria-haspopup="dialog" aria-label={`Ver os ${trilha.items.length} certificados: ${trilha.title}`}>
+      <button type="button" className="btn btn-fantasma btn-pequeno" onClick={aoAbrir} aria-haspopup="dialog" aria-label={`Ver todos os ${trilha.items.length} certificados: ${trilha.title}`}>
         Ver todos os {trilha.items.length} <span className="seta" aria-hidden="true">→</span>
       </button>
     </article>

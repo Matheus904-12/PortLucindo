@@ -17,9 +17,9 @@ function escalonar(container: Element) {
 }
 
 function entradaDoHero() {
-  gsap.from('.hero .linha > span', { yPercent: 115, duration: 1.2, stagger: 0.12, ease: 'power4.out', delay: 0.15 })
-  gsap.fromTo('.hero-foto', { clipPath: 'inset(100% 0 0 0)' }, { clipPath: 'inset(0% 0 0 0)', duration: 1.4, ease: 'power4.inOut', delay: 0.2 })
-  gsap.from('.hero-aparece', { y: 24, opacity: 0, duration: 0.9, stagger: 0.08, ease: EASE, delay: 0.7 })
+  gsap.from('.hero .linha > span', { yPercent: 115, duration: 1.2, stagger: 0.1, ease: 'power4.out' })
+  gsap.fromTo('.hero-foto', { clipPath: 'inset(100% 0 0 0)' }, { clipPath: 'inset(0% 0 0 0)', duration: 1, ease: 'power4.inOut' })
+  gsap.from('.hero-aparece', { y: 24, opacity: 0, duration: 0.9, stagger: 0.08, ease: EASE, delay: 0.45 })
 }
 
 /** Movimento preso ao scroll (scrub): a posição depende de onde a página está, não de tempo. */
@@ -37,9 +37,12 @@ const NORMAL = { rotateX: 0, scale: 1, opacity: 1, y: 0 }
  * Uma única linha do tempo presa ao scroll cobre as três fases (entrada, repouso, saída).
  */
 function inclinar(el: Element) {
+  // Elementos com texto de ação (barra do WEAVE) mantêm opacidade 1: cartão esmaecido reprova contraste.
+  const { opacity, ...semOpacidade } = ABAIXADO
+  const abaixado = el.hasAttribute('data-sem-opacidade') ? semOpacidade : ABAIXADO
   gsap.set(el, { transformPerspective: 1100, transformOrigin: '50% 100%' })
   const linha = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: 0.6 } })
-  linha.fromTo(el, ABAIXADO, { ...NORMAL, duration: 0.22 }).to({}, { duration: 0.56 }).to(el, { ...ABAIXADO, duration: 0.22 })
+  linha.fromTo(el, abaixado, { ...NORMAL, duration: 0.22 }).to({}, { duration: 0.56 }).to(el, { ...abaixado, duration: 0.22 })
 }
 
 /** Brilho que segue o cursor nos cartões (só com mouse; em toque não existe hover). */
@@ -77,15 +80,23 @@ export function useScrollAnimations() {
     gsap.registerPlugin(ScrollTrigger)
     const parar = initSmoothScroll()
     const media = gsap.matchMedia()
-    media.add('(prefers-reduced-motion: no-preference)', () => {
+    media.add('(prefers-reduced-motion: no-preference)', (contexto) => {
       entradaDoHero()
-      paralaxeDoHero()
-      barraDeProgresso()
-      desenharLinhaDoTempo()
-      gsap.utils.toArray<Element>('[data-anim="subir"]').forEach(subir)
-      gsap.utils.toArray<Element>('[data-anim="escalonar"]').forEach(escalonar)
-      gsap.utils.toArray<Element>('[data-anim="inclinar"]').forEach(inclinar)
-      return brilhoNosCartoes()
+      // O resto só importa depois da primeira pintura; adiar reduz o bloqueio da thread principal (TBT).
+      // contexto.add mantém as animações adiadas dentro do matchMedia, então o revert ainda as limpa.
+      const adiar = window.requestIdleCallback ?? ((fn: () => void) => window.setTimeout(fn, 200))
+      let desfazerBrilho = () => {}
+      adiar(() => contexto.add?.(() => {
+        paralaxeDoHero()
+        barraDeProgresso()
+        desenharLinhaDoTempo()
+        gsap.utils.toArray<Element>('[data-anim="subir"]').forEach(subir)
+        gsap.utils.toArray<Element>('[data-anim="escalonar"]').forEach(escalonar)
+        gsap.utils.toArray<Element>('[data-anim="inclinar"]').forEach(inclinar)
+        desfazerBrilho = brilhoNosCartoes()
+        ScrollTrigger.refresh()
+      }))
+      return () => desfazerBrilho()
     })
     document.fonts.ready.then(() => ScrollTrigger.refresh())
     return () => { media.revert(); parar() }

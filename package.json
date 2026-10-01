@@ -27,6 +27,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@react-pdf/renderer": "^4.9.0",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",

@@ -28,7 +28,7 @@
 .chips li { padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; font: 400 0.78rem var(--font-mono); color: var(--text-soft); }
 .proj-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; }
 .proj-privado { padding: 6px 12px; border: 1px dashed var(--line); border-radius: 999px; }
-.proj-aviso { font-size: 0.8rem; color: var(--text-soft); opacity: 0.85; }
+.proj-aviso { font-size: 0.8rem; color: var(--text-soft); }
 
 .proj-lista { display: grid; gap: clamp(24px, 3.5vw, 40px); }
 .proj-destaque .capa { border-bottom: 1px solid var(--line); }

@@ -10,7 +10,7 @@ export function WeaveBarra({ projeto }: { projeto: Project }) {
   const inicio = projeto.startsAt ? mesAno(projeto.startsAt) : null
   return (
     <>
-      <div className="barra" data-anim="inclinar">
+      <div className="barra" data-anim="inclinar" data-sem-opacidade>
         <div className="barra-titulo">
           <span className="selo-breve mono">Em construção{inicio && <> · produção em {inicio}</>}</span>
           <h3>{projeto.title}</h3>
