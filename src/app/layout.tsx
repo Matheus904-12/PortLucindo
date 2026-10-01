@@ -10,6 +10,7 @@ import './globals.css'
 import '@/styles/shell.css'
 import '@/styles/hero.css'
 import '@/styles/sections.css'
+import '@/styles/projects.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lucindoporto.netlify.app'),
@@ -26,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" data-theme="dark" suppressHydrationWarning>
       <head><script dangerouslySetInnerHTML={{ __html: temaInicial }} /></head>
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   )
 }
