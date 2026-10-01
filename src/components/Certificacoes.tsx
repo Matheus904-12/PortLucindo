@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { publicProfile } from '@/content/profile'
+import { publicProfile } from '@/content/publico'
 import type { Certification } from '@/content/schema'
 import { agruparPorTrilha, destaquesDeCertificacao, outrasCertificacoes, trilhaPorId, type Trilha } from '@/lib/certificacoes'
 import { mesAno } from '@/lib/format'

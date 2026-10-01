@@ -12,6 +12,7 @@ import '@/styles/hero.css'
 import '@/styles/sections.css'
 import '@/styles/projects.css'
 import '@/styles/cards.css'
+import '@/styles/contact.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lucindoporto.netlify.app'),

@@ -1,4 +1,4 @@
-import { publicProfile } from '@/content/profile'
+import { publicProfile } from '@/content/publico'
 import { mesAno } from '@/lib/format'
 import { totalCertificacoes } from '@/lib/timeline'
 import { SecaoCabeca } from './SecaoCabeca'

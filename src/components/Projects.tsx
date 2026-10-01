@@ -1,4 +1,4 @@
-import { publicProfile } from '@/content/profile'
+import { publicProfile } from '@/content/publico'
 import type { Project } from '@/content/schema'
 import { SecaoCabeca } from './SecaoCabeca'
 import { WeaveBarra } from './WeaveBarra'

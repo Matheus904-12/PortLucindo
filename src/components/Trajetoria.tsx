@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { publicProfile } from '@/content/profile'
+import { publicProfile } from '@/content/publico'
 import { periodo } from '@/lib/format'
 import { montarTrilhas, type ItemDaTrilha } from '@/lib/timeline'
 import { SecaoCabeca } from './SecaoCabeca'
