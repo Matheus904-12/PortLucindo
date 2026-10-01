@@ -44,10 +44,13 @@ export const projects: Project[] = [
     repo: 'https://github.com/Matheus904-12/ConectaTEA', demo: 'https://conectatea.netlify.app/',
   },
   {
-    slug: 'inovamold', title: 'InovaMold', kind: 'Dashboard de logística e rastreabilidade', status: 'academico',
+    slug: 'inovamold', title: 'InovaMold', kind: 'Dashboard de logística e rastreabilidade', status: 'producao',
     role: 'Desenvolvimento ponta a ponta',
-    summary: 'Sistema de monitoramento logístico do pedido, da entrada no comercial à expedição: CRUD em tempo real, timeline de 8 etapas, dashboards que comparam tempos reais com médias históricas e semáforo de insumos.',
+    summary: 'Desenvolvido para a InovaMold Polímeros: sistema de monitoramento logístico do pedido, da entrada no comercial à expedição: CRUD em tempo real, timeline de 8 etapas, dashboards que comparam tempos reais com médias históricas e semáforo de insumos.',
     stack: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Supabase', 'Chart.js'], featured: false,
+    // A demo (github.io/Dashboard-SCRUM) depende de um banco Supabase hoje pausado: a tela mostra OFFLINE.
+    // Depois de restaurar o projeto no painel do Supabase: reativar `demo` e `cover`, e rodar `npm run capturar -- inovamold`.
+    repo: 'https://github.com/Matheus904-12/Dashboard-SCRUM',
   },
   {
     slug: 'suburban', title: 'Suburban', kind: 'Rastreio de trens da CPTM', status: 'estudo',
@@ -67,7 +70,8 @@ export const projects: Project[] = [
     slug: 'cerne', title: 'Cerne', kind: 'Board de tarefas pessoal', status: 'estudo',
     role: 'Autor',
     summary: 'Board de tarefas em PWA em que os dados vivem em arquivos versionados no próprio repositório. O Claude Code cria e move tarefas por um servidor MCP, e os lembretes saem por e-mail e Telegram via GitHub Actions.',
-    stack: ['PWA', 'MCP', 'Node.js', 'GitHub Actions'], featured: false, privateCode: true,
+    stack: ['PWA', 'MCP', 'Node.js', 'GitHub Actions'], featured: false,
+    repo: 'https://github.com/Matheus904-12/cerne',
   },
   {
     slug: 'ecommerce-montink', title: 'Mini ERP Montink', kind: 'ERP e e-commerce', status: 'estudo',

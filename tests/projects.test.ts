@@ -14,8 +14,8 @@ describe('projetos', () => {
   it('toda capa tem a versão mobile ao lado (usada no mockup de celular)', () => {
     for (const p of profile.projects.filter((x) => x.cover)) expect(existsSync(arquivo(p.cover!.replace('-desktop', '-mobile'))), p.slug).toBe(true)
   })
-  it('projeto com demo quebrada ou com login não expõe link de demo', () => {
-    for (const slug of ['weatherapi', 'cerne']) expect(profile.projects.find((p) => p.slug === slug)?.demo, slug).toBeUndefined()
+  it('projeto com demo quebrada, offline ou com login não expõe link de demo', () => {
+    for (const slug of ['weatherapi', 'cerne', 'inovamold']) expect(profile.projects.find((p) => p.slug === slug)?.demo, slug).toBeUndefined()
   })
   it('todo projeto com demo ao vivo tem capa', () => {
     for (const p of profile.projects.filter((x) => x.demo)) expect(p.cover, p.slug).toBeTruthy()
