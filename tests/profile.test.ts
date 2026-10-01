@@ -35,6 +35,11 @@ describe('profile', () => {
     expect(flavio?.text).toContain('Recomendo o Matheus para oportunidades')
     expect(profile.recommendations.find((r) => r.name === 'Paulinho Pereira')?.text).toContain('Estamos super satisfeitos pelo site')
   })
+  it('a squad se chama Conciex Channels (e nunca "Zendesk Channels")', () => {
+    const tudo = JSON.stringify(profile)
+    expect(tudo).toContain('Conciex Channels')
+    expect(tudo).not.toContain('Zendesk Channels')
+  })
   it('slugs de projeto são únicos', () => {
     const slugs = profile.projects.map((p) => p.slug)
     expect(new Set(slugs).size).toBe(slugs.length)

@@ -11,7 +11,8 @@
     "capturar": "node scripts/capturar-projetos.mjs",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "foto": "node scripts/otimizar-foto.mjs"
+    "foto": "node scripts/otimizar-foto.mjs",
+    "verificar": "npm run cv && npm run build && vitest run"
   },
   "dependencies": {
     "@fontsource/geist": "^5.3.0",
