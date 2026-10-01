@@ -60,3 +60,19 @@
 .proj-aviso { font-size: 0.85rem; color: var(--text-soft); padding: 12px 14px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 6%, transparent); }
 .proj-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 @media (max-width: 520px) { .dialogo-cabeca, .trilha-modal, .sobre-weave { padding-inline: 20px; } .sobre-weave .fatos > div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* Celular: o selo pontilhado dentro do cartão pontilhado quebrava em duas linhas e poluía. Vira uma linha de status
+   com ponto pulsante, o nome ganha corpo e os dois botões dividem a largura. */
+@media (max-width: 899px) {
+  .barra { flex-direction: column; align-items: stretch; gap: 18px; padding: 22px 20px 20px; border-radius: 24px; }
+  .barra-titulo { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .barra h3 { font-size: 3rem; }
+  .selo-breve { display: grid; gap: 2px; padding: 0 0 0 20px; border: 0; border-radius: 0; position: relative; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-soft); }
+  .selo-breve > span:first-child { color: var(--text); }
+  .selo-breve::before { content: ''; position: absolute; left: 2px; top: 0.35em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); animation: pulso-selo 2s ease-out infinite; }
+  .selo-sep { display: none; }
+  .barra-acoes { display: grid; grid-template-columns: 1fr 1fr; }
+  .barra-acoes .btn { min-height: 46px; }
+}
+@keyframes pulso-selo { 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .selo-breve::before { animation: none !important; } }
