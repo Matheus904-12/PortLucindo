@@ -24,7 +24,10 @@ export const projectSchema = z.object({
   role: z.string(), summary: z.string(), stack: z.array(z.string()),
   featured: z.boolean(), cover: z.string().optional(),
   repo: z.url().optional(), demo: z.url().optional(), privateCode: z.boolean().optional(),
+  /** Banco no plano gratuito (ex.: Supabase): pode estar pausado por inatividade e demorar a acordar. */
+  demoMayBeAsleep: z.boolean().optional(),
 })
+export const milestoneSchema = z.object({ date: mes, title: z.string(), text: z.string() })
 export const recommendationSchema = z.object({
   name: z.string(), headline: z.string(), relation: z.string(), date: mes, text: z.string(),
 })
@@ -40,7 +43,9 @@ export const profileSchema = z.object({
   skills: z.array(z.object({ group: z.string(), items: z.array(z.string()) })),
   languages: z.array(z.object({ name: z.string(), level: z.string() })),
   recommendations: z.array(recommendationSchema),
+  milestones: z.array(milestoneSchema),
 })
 export type Profile = z.infer<typeof profileSchema>
 export type Certification = z.infer<typeof certificationSchema>
 export type Project = z.infer<typeof projectSchema>
+export type Milestone = z.infer<typeof milestoneSchema>

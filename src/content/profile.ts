@@ -1,5 +1,6 @@
 import { certifications } from './data/certifications'
 import { education } from './data/education'
+import { milestones } from './data/milestones'
 import { experience } from './data/experience'
 import { projects } from './data/projects'
 import { recommendations } from './data/recommendations'
@@ -28,7 +29,7 @@ const dados: Profile = {
   updatedAt: '2026-10-01',
   experience, education, certifications, projects, skills,
   languages: [{ name: 'Português', level: 'Fluente ou nativo' }, { name: 'Inglês', level: 'Nível básico' }],
-  recommendations,
+  recommendations, milestones,
 }
 
 /** Falha o build se qualquer dado sair do formato. */

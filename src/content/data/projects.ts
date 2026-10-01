@@ -7,7 +7,7 @@ export const projects: Project[] = [
     role: 'Liderança técnica de uma equipe de cinco pessoas',
     summary: 'Plataforma para barbearias e salões de beleza: aplicativo Android nativo (MVVM, Material Design 3), painel web de gestão e API REST documentada com Swagger/OpenAPI. Desenvolvida com Spec Driven Development, banco relacional e NoSQL, e serviços de nuvem para mídia e notificações.',
     stack: ['Kotlin', 'Jetpack Compose', 'Java', 'Spring Boot', 'TypeScript', 'Next.js', 'PostgreSQL', 'MongoDB', 'Firebase'],
-    featured: true,
+    featured: true, demoMayBeAsleep: true,
     repo: 'https://github.com/Agendei-Barbearia-e-Salao-de-Beleza/Agendei.', demo: 'https://agendei-alpha.vercel.app',
   },
   {
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     slug: 'inovamold', title: 'InovaMold', kind: 'Dashboard de logística e rastreabilidade', status: 'academico',
     role: 'Desenvolvimento ponta a ponta',
     summary: 'Sistema de monitoramento logístico do pedido, da entrada no comercial à expedição: CRUD em tempo real, timeline de 8 etapas, dashboards que comparam tempos reais com médias históricas e semáforo de insumos.',
-    stack: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Supabase', 'Chart.js'], featured: false,
+    stack: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Supabase', 'Chart.js'], featured: false, demoMayBeAsleep: true,
   },
   {
     slug: 'suburban', title: 'Suburban', kind: 'Rastreio de trens da CPTM', status: 'estudo',
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     slug: 'conectatea', title: 'ConectaTEA', kind: 'Plataforma de apoio a famílias', status: 'academico',
     role: 'Desenvolvimento e coordenação técnica',
     summary: 'Hub para famílias com filhos no espectro autista: autenticação em duas etapas com OTP por e-mail, JWT, painel para especialistas com prontuário e Google Meet, e chat em tempo real com WebSockets.',
-    stack: ['Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Supabase', 'JWT'], featured: false,
+    stack: ['Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Supabase', 'JWT'], featured: false, demoMayBeAsleep: true,
     repo: 'https://github.com/Matheus904-12/ConectaTEA', demo: 'https://conectatea.netlify.app/',
   },
 ]

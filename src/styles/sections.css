@@ -1,0 +1,40 @@
+/* Seções editoriais: cabeçalho, Sobre e Trajetória. */
+.secao { position: relative; padding-block: clamp(72px, 11vw, 150px); }
+.secao-cabeca { display: grid; gap: 18px; margin-bottom: clamp(40px, 6vw, 84px); }
+.secao-cabeca h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.6rem, 8.5vw, 6.8rem); line-height: 0.95; letter-spacing: -0.03em; max-width: 13ch; }
+.secao-cabeca h2 em { font-style: italic; color: var(--accent); }
+
+/* Sobre */
+.sobre-grade { display: grid; gap: clamp(36px, 6vw, 80px); grid-template-columns: minmax(0, 1fr); }
+.sobre-texto { display: grid; gap: 22px; color: var(--text-soft); max-width: 58ch; }
+.sobre-lead { font-family: var(--font-display); font-size: clamp(1.7rem, 3.6vw, 2.7rem); line-height: 1.18; color: var(--text); letter-spacing: -0.01em; }
+.fatos { margin: 0; display: grid; align-content: start; }
+.fatos > div { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 16px; padding: 16px 0; border-top: 1px solid var(--line); }
+.fatos > div:last-child { border-bottom: 1px solid var(--line); }
+.fatos dd { margin: 0; overflow-wrap: anywhere; }
+@media (min-width: 900px) { .sobre-grade { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); } }
+
+/* Trajetória: a linha central se desenha com o scroll (GSAP); sem JS ela já nasce completa. */
+.tl-envoltorio { position: relative; }
+.tl-linha { position: absolute; left: 7px; top: 8px; bottom: 0; width: 1px; background: var(--accent); transform-origin: top; opacity: 0.55; }
+.tl { list-style: none; margin: 0; padding: 0; display: grid; }
+.tl-item { position: relative; display: grid; gap: 8px; padding: 0 0 clamp(36px, 5vw, 56px) 44px; }
+.tl-item::before { content: ''; position: absolute; left: 0; top: 0.35rem; width: 15px; height: 15px; border-radius: 50%; background: var(--bg); border: 1px solid var(--text-soft); transition: border-color 0.3s, background 0.3s; }
+.tl-item[data-current='true']::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 24%, transparent); }
+.tl-item[data-future='true']::before { border: 1px dashed var(--accent); }
+.tl-data { color: var(--text-soft); }
+.tl-corpo { display: grid; gap: 6px; max-width: 60ch; }
+.tl-tipo { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.tl-selo { padding: 2px 10px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); letter-spacing: 0.06em; }
+:root[data-theme='light'] .tl-selo { color: var(--text); background: color-mix(in srgb, var(--accent) 45%, transparent); }
+.tl-selo-futuro { background: transparent; border: 1px dashed var(--accent); }
+.tl-corpo h3 { font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.1; font-weight: 500; letter-spacing: -0.02em; }
+.tl-sub { color: var(--text-soft); }
+.tl-texto { color: var(--text-soft); font-size: 0.96rem; margin-top: 6px; }
+@media (min-width: 900px) {
+  .tl-linha { left: 232px; }
+  .tl-item { grid-template-columns: 200px minmax(0, 1fr); gap: 0 56px; padding-left: 0; }
+  .tl-item::before { left: 225px; top: 0.4rem; }
+  .tl-data { text-align: right; padding-top: 0.3rem; }
+  .tl-corpo { padding-left: 0; }
+}

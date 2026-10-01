@@ -1,5 +1,6 @@
 import { Document, Font, Link, Page, StyleSheet, Text, View } from '@react-pdf/renderer'
 import type { Profile } from '../content/schema'
+import { dataCompleta, mesAno } from './format'
 
 const fonte = (arquivo: string) => `node_modules/@fontsource/${arquivo}`
 Font.register({
@@ -31,19 +32,6 @@ const s = StyleSheet.create({
   marcador: { width: 9, color: MUDO },
   rodape: { position: 'absolute', bottom: 18, left: 38, right: 38, flexDirection: 'row', justifyContent: 'space-between', fontSize: 7.5, color: MUDO },
 })
-
-const MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
-
-export function mesAno(aaaamm: string | null): string {
-  if (!aaaamm) return 'atual'
-  const [ano, mes] = aaaamm.split('-')
-  return `${MESES[Number(mes) - 1]}/${ano}`
-}
-
-export function dataCompleta(iso: string): string {
-  const [ano, mes, dia] = iso.split('-')
-  return `${dia}/${mes}/${ano}`
-}
 
 /** A trilha Microsoft Learning aparece à parte, como uma linha de contagem. */
 export function selecionarDestaques(profile: Profile, limite: number) {

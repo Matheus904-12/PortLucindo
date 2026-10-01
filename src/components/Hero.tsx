@@ -30,7 +30,7 @@ export function Hero() {
         </h1>
         <figure className="hero-foto">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matheus.jpg" width={970} height={970} alt="Retrato de Matheus Lucindo sorrindo, de óculos" fetchPriority="high" />
+          <img src="/images/matheus.webp" width={920} height={1227} alt="Retrato de Matheus Lucindo sorrindo, de óculos e blusa marrom" fetchPriority="high" />
         </figure>
         <div className="hero-texto">
           <p className="hero-lead hero-aparece">{publicProfile.tagline}</p>

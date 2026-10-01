@@ -29,6 +29,11 @@ function paralaxeDoHero() {
   gsap.to('.hero h1', { yPercent: -7, ease: 'none', scrollTrigger: gatilho })
 }
 
+/** A linha central da Trajetória se desenha conforme a seção passa pela tela. */
+function desenharLinhaDoTempo() {
+  gsap.fromTo('.tl-linha', { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.tl-envoltorio', start: 'top 70%', end: 'bottom 70%', scrub: true } })
+}
+
 function barraDeProgresso() {
   gsap.fromTo('.scroll-progress', { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 0.3 } })
 }
@@ -46,6 +51,7 @@ export function useScrollAnimations() {
       entradaDoHero()
       paralaxeDoHero()
       barraDeProgresso()
+      desenharLinhaDoTempo()
       gsap.utils.toArray<Element>('[data-anim="subir"]').forEach(subir)
       gsap.utils.toArray<Element>('[data-anim="escalonar"]').forEach(escalonar)
     })

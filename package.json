@@ -10,7 +10,8 @@
     "cv:importar": "tsx scripts/importar-linkedin.ts",
     "capturar": "node scripts/capturar-projetos.mjs",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "foto": "node scripts/otimizar-foto.mjs"
   },
   "dependencies": {
     "@fontsource/geist": "^5.3.0",

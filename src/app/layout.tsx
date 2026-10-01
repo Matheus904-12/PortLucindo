@@ -9,6 +9,7 @@ import '@fontsource/instrument-serif/latin-400-italic.css'
 import './globals.css'
 import '@/styles/shell.css'
 import '@/styles/hero.css'
+import '@/styles/sections.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lucindoporto.netlify.app'),
