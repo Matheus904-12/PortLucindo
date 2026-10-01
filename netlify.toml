@@ -1,8 +1,6 @@
 [build]
-  publish = "v2"
-  command = "echo 'Build complete'"
+  command = "npm run cv && npm run build"
+  publish = "out"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+  NODE_VERSION = "22"
