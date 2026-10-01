@@ -12,7 +12,7 @@ export function WeaveBarra({ projeto }: { projeto: Project }) {
     <>
       <div className="barra" data-anim="inclinar" data-sem-opacidade>
         <div className="barra-titulo">
-          <span className="selo-breve mono">Em construção{inicio && <> · produção em {inicio}</>}</span>
+          <span className="selo-breve mono"><span>Em construção</span>{inicio && <span className="selo-data"><span className="selo-sep" aria-hidden="true"> · </span>produção em {inicio}</span>}</span>
           <h3>{projeto.title}</h3>
           <p className="barra-tipo">{projeto.kind}</p>
         </div>
