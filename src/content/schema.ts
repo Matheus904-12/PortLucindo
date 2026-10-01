@@ -32,6 +32,7 @@ export const recommendationSchema = z.object({
 export const profileSchema = z.object({
   name: z.string(), headline: z.string(), location: z.string(),
   availability: z.boolean(),
+  tagline: z.string(),
   summary: z.array(z.string()).min(1),
   links: z.array(link), email: z.email(), updatedAt: z.iso.date(),
   experience: z.array(experienceSchema), education: z.array(educationSchema),

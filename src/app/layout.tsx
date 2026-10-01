@@ -7,6 +7,8 @@ import '@fontsource/geist-mono/latin-500.css'
 import '@fontsource/instrument-serif/latin-400.css'
 import '@fontsource/instrument-serif/latin-400-italic.css'
 import './globals.css'
+import '@/styles/shell.css'
+import '@/styles/hero.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lucindoporto.netlify.app'),

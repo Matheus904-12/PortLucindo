@@ -11,6 +11,7 @@ const dados: Profile = {
   headline: 'Desenvolvedor de Software & Analista · BCR.CX | Time Channels | Full Stack',
   location: 'Ferraz de Vasconcelos, São Paulo, Brasil',
   availability: true,
+  tagline: 'Integrações, APIs e produtos web. Hoje conecto a Zendesk a marketplaces no Time Channels da BCR.CX.',
   summary: [
     'Sou desenvolvedor de software júnior e analista na BCR.CX, na squad de Zendesk Channels. Minha trajetória junta paixão por tecnologia com soft skills que considero essenciais: comunicação clara, organização, pontualidade e inteligência emocional.',
     'Curso Análise e Desenvolvimento de Sistemas na Universidade de Mogi das Cruzes, onde também participo de um projeto de Iniciação Científica voltado ao setor privado.',
