@@ -17,6 +17,7 @@ const dados: Profile = {
     'No dia a dia uso Python, TypeScript, Node.js e PHP, com Docker em Ubuntu/Linux e Postman para validar APIs. Domino bancos relacionais e MongoDB. Meu interesse de futuro está na dualidade entre carreira acadêmica e governança de TI.',
   ],
   links: [
+    { label: 'Portfólio', href: 'https://lucindoporto.netlify.app' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/matheus-lucindo-b35b68190' },
     { label: 'GitHub', href: 'https://github.com/Matheus904-12' },
     { label: 'Credly', href: 'https://www.credly.com/users/matheus-lucindo' },
