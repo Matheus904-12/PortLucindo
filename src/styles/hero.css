@@ -1,9 +1,10 @@
 /* Hero editorial: nome gigante sobrepõe o retrato em arco. */
-.hero { position: relative; min-height: 100svh; display: grid; align-items: end; padding: clamp(104px, 15vh, 150px) 0 clamp(32px, 6vh, 64px); }
+/* O conteúdo começa logo abaixo do menu; o letreiro de tecnologias aparece espiando na base da primeira tela. */
+.hero { position: relative; display: grid; align-items: start; padding: clamp(92px, 12vh, 124px) 0 clamp(48px, 8vh, 96px); }
 .hero-grade { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'meta' 'titulo' 'foto' 'texto'; row-gap: 22px; align-items: end; }
 .hero-meta { grid-area: meta; }
 .hero-meta .separador { margin: 0 6px; opacity: 0.5; }
-.hero h1 { grid-area: titulo; position: relative; z-index: 2; font-size: clamp(3.3rem, 17vw, 12rem); line-height: 0.86; letter-spacing: -0.045em; font-weight: 600; text-transform: uppercase; }
+.hero h1 { grid-area: titulo; position: relative; z-index: 2; font-size: clamp(3rem, 14.5vw, 8.5rem); line-height: 0.86; letter-spacing: -0.045em; font-weight: 600; text-transform: uppercase; }
 .hero .linha { display: block; overflow: hidden; padding-bottom: 0.1em; }
 .hero .linha > span { display: inline-block; }
 .hero .linha.serifa > span { font-family: var(--font-display); font-style: italic; font-weight: 400; text-transform: none; letter-spacing: -0.02em; font-size: 1.04em; }
@@ -19,7 +20,7 @@
 
 @media (min-width: 900px) {
   .hero-grade { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); grid-template-areas: 'meta foto' 'titulo foto' 'texto foto'; column-gap: clamp(24px, 4vw, 72px); row-gap: 28px; }
-  .hero h1 { margin-right: calc(-1 * clamp(48px, 11vw, 190px)); }
+  .hero h1 { margin-right: calc(-1 * clamp(24px, 4vw, 64px)); }
   .hero-foto { width: 100%; justify-self: end; }
 }
 
