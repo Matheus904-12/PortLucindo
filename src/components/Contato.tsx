@@ -65,7 +65,7 @@ export function Contato({ emailCodificado }: { emailCodificado: string }) {
                 <path className="sucesso-marca" d="M20 33l8 8 16-17" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <h3>Mensagem <em>enviada</em>.</h3>
-              <p>Obrigado pelo contato! Li com atenção e respondo por e-mail em breve.</p>
+              <p>Obrigado pelo contato!</p>
               <button type="button" className="btn btn-fantasma btn-pequeno" onClick={() => setEstado('ocioso')}>Enviar outra mensagem</button>
             </div>
           ) : (
