@@ -4,7 +4,6 @@ import { publicProfile } from '@/content/publico'
 import type { Certification } from '@/content/schema'
 import { agruparPorTrilha, destaquesDeCertificacao, outrasCertificacoes, trilhaPorId, type Trilha } from '@/lib/certificacoes'
 import { mesAno } from '@/lib/format'
-import { totalCertificacoes } from '@/lib/timeline'
 import { Dialogo } from './Dialogo'
 import { SecaoCabeca } from './SecaoCabeca'
 
@@ -56,7 +55,7 @@ export function Certificacoes() {
   return (
     <section className="secao" id="certificacoes">
       <div className="container">
-        <SecaoCabeca numero="04" rotulo="Certificações e cursos" titulo={<>{totalCertificacoes(publicProfile)} certificados e <em>contando</em>.</>} />
+        <SecaoCabeca numero="04" rotulo="Certificações e cursos" titulo={<>Aprendizado <em>contínuo</em>.</>} />
         <div className="cert-grade">
           {destaquesDeCertificacao(publicProfile).map((c) => <Destaque key={c.id} cert={c} />)}
         </div>

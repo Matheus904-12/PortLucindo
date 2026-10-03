@@ -21,7 +21,7 @@ export function Recomendacoes() {
   return (
     <section className="secao" id="recomendacoes">
       <div className="container">
-        <SecaoCabeca numero="05" rotulo="Recomendações" titulo={<>Em palavras de <em>quem acompanhou</em>.</>} />
+        <SecaoCabeca numero="05" rotulo="Recomendações" titulo={<>O que dizem sobre <em>meu trabalho</em>.</>} />
         <div className="rec" data-anim="subir">
           <div className="rec-pessoa">
             <p className="mono rec-contagem"><span className="accent">{String(indice + 1).padStart(2, '0')}</span> / {total}</p>

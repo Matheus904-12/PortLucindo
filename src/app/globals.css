@@ -31,7 +31,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: clip; }
-h1, h2, h3 { margin: 0; font-weight: 400; line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance; }
+h1, h2, h3 { margin: 0; font-weight: 400; line-height: 0.98; letter-spacing: -0.02em; word-spacing: 0.12em; text-wrap: balance; }
 p { margin: 0; text-wrap: pretty; }
 a { color: inherit; }
 img { display: block; max-width: 100%; height: auto; }
@@ -46,3 +46,6 @@ img { display: block; max-width: 100%; height: auto; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* A serifa condensada com tracking negativo deixa as palavras coladas: um respiro extra entre elas. */
+.rec-texto, .cv-lead, .contato-lead, .sobre-weave-lead, .proximo h3, .proj h3 { word-spacing: 0.14em; }

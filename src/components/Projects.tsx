@@ -95,7 +95,7 @@ export function Projects() {
   return (
     <section className="secao" id="projetos">
       <div className="container">
-        <SecaoCabeca numero="03" rotulo="Projetos" titulo={<>Coisas que <em>construí</em>.</>} />
+        <SecaoCabeca numero="03" rotulo="Projetos" titulo={<>Projetos <em>autorais</em>.</>} />
         {emConstrucao.map((p) => <WeaveBarra key={p.slug} projeto={p} />)}
         <div className="proj-lista">
           {destaques.map((p, i) => <Cartao key={p.slug} projeto={p} indice={i} destaque />)}

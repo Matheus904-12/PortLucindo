@@ -36,7 +36,7 @@ export function Trajetoria() {
   return (
     <section className="secao" id="trajetoria">
       <div className="container">
-        <SecaoCabeca numero="02" rotulo="Trajetória" titulo={<>Trabalho e <em>formação</em>.</>} />
+        <SecaoCabeca numero="02" rotulo="Trajetória" titulo={<>Meu caminho até <em>aqui</em>.</>} />
         {proximo.map((p) => (
           <aside key={p.id} className="proximo" data-anim="subir">
             <p className="mono"><span className="tl-selo tl-selo-futuro">Próximo capítulo</span></p>

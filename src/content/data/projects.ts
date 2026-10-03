@@ -20,7 +20,8 @@ export const projects: Project[] = [
     role: 'Estudante de Iniciação Científica',
     summary: 'Ferramenta que agrega currículos da Plataforma Lattes e cruza com OpenAlex e CrossRef para dar visibilidade à produção acadêmica, com busca avançada, painéis de indicadores e exportação para o ORCID.',
     stack: ['PHP', 'JavaScript'], featured: true, cover: cover('prodmais'), demoMayBeAsleep: true,
-    repo: 'https://github.com/Prodmais-UMC/Prodmais', demo: 'https://prodmais-6g41.onrender.com',
+    // Repositório privado: sem link de código.
+    demo: 'https://prodmais-6g41.onrender.com',
   },
   {
     slug: 'claude-cortex', title: 'claude-cortex', kind: 'Ferramenta de desenvolvimento', status: 'producao',
@@ -41,7 +42,8 @@ export const projects: Project[] = [
       'Exportar documentação e infraestrutura (Terraform, Docker e Kubernetes).',
       'Conectores MCP para trazer métricas de Sentry, SonarCloud, Grafana e outras ferramentas.',
     ],
-    repo: 'https://github.com/weave-platform/weave', demo: 'https://weave-platform-neon.vercel.app',
+    // Repositório privado: sem link de código.
+    demo: 'https://weave-platform-neon.vercel.app',
   },
   {
     slug: 'conectatea', title: 'ConectaTEA', kind: 'Plataforma de apoio a famílias', status: 'academico',

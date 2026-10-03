@@ -28,6 +28,9 @@ describe('projetos', () => {
     expect(weave.highlights?.length).toBeGreaterThanOrEqual(4)
     expect(weave.demo).toBeTruthy()
   })
+  it('WEAVE e Prodmais têm repositório privado: nenhum link de código', () => {
+    for (const slug of ['weave', 'prodmais']) expect(profile.projects.find((p) => p.slug === slug)?.repo, slug).toBeUndefined()
+  })
   it('projeto privado nunca expõe link de repositório', () => {
     for (const p of profile.projects.filter((x) => x.privateCode)) expect(p.repo, p.slug).toBeUndefined()
   })

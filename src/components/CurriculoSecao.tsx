@@ -8,7 +8,7 @@ export function CurriculoSecao() {
   return (
     <section className="secao" id="curriculo">
       <div className="container">
-        <SecaoCabeca numero="06" rotulo="Currículo" titulo={<>Meu currículo em <em>PDF</em>.</>} />
+        <SecaoCabeca numero="06" rotulo="Currículo" titulo={<>Currículo sempre <em>atualizado</em>.</>} />
         <div className="cv-grade">
           <div className="cv-texto" data-anim="subir">
             <p className="cv-lead">Gerado a partir dos mesmos dados deste site, então os dois nunca se contradizem.</p>

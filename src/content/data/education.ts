@@ -13,7 +13,7 @@ export const education: Profile['education'] = [
   },
   {
     institution: 'Sesi São Paulo', course: 'Ensino Médio',
-    start: '2022-03', end: '2024-12', note: 'Média geral 9,5',
+    start: '2022-03', end: '2024-12',
     summary: 'Projeto Influencer Tecnologia, com especialização em maquinários e computadores.',
   },
 ]

@@ -18,8 +18,8 @@ const MUDO = '#52525b'
 const LINHA = '#d4d4d8'
 
 const s = StyleSheet.create({
-  pagina: { fontFamily: 'Geist', fontSize: 9, color: TINTA, paddingTop: 34, paddingBottom: 40, paddingHorizontal: 38, lineHeight: 1.45 },
-  nome: { fontFamily: 'Serif', fontSize: 30, lineHeight: 1 },
+  pagina: { fontFamily: 'Geist', fontSize: 9, color: TINTA, paddingTop: 34, paddingBottom: 40, paddingHorizontal: 38, lineHeight: 1.5, letterSpacing: 0.25, wordSpacing: 1.5 },
+  nome: { fontFamily: 'Serif', fontSize: 30, lineHeight: 1, letterSpacing: 0.6, wordSpacing: 6 },
   cargo: { fontSize: 10.5, color: MUDO, marginTop: 4 },
   contato: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 7, fontSize: 8.5 },
   contatoItem: { marginRight: 12, color: TINTA, textDecoration: 'none' },
@@ -50,7 +50,7 @@ export function exibirLink(href: string): string {
   return href.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
 }
 
-const Secao = ({ titulo }: { titulo: string }) => <Text style={s.titulo}>{titulo}</Text>
+const Secao = ({ titulo }: { titulo: string }) => <Text style={s.titulo} minPresenceAhead={70}>{titulo}</Text>
 const Item = ({ texto }: { texto: string }) => (
   <View style={s.item}><Text style={s.marcador}>•</Text><Text style={{ flex: 1 }}>{texto}</Text></View>
 )

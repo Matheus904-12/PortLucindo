@@ -46,7 +46,7 @@ export function Contato({ emailCodificado }: { emailCodificado: string }) {
   return (
     <section className="secao" id="contato">
       <div className="container">
-        <SecaoCabeca numero="07" rotulo="Contato" titulo={<>Vamos <em>conversar</em>.</>} />
+        <SecaoCabeca numero="07" rotulo="Contato" titulo={<>Vamos trabalhar <em>juntos</em>?</>} />
         <div className="contato-grade">
           <div className="contato-texto" data-anim="subir">
             <p className="contato-lead">Estou aberto a oportunidades de desenvolvimento de software. O caminho mais rápido é o e-mail.</p>
@@ -58,6 +58,17 @@ export function Contato({ emailCodificado }: { emailCodificado: string }) {
               {ligacoes.map((l) => <li key={l.href}><a href={l.href} target="_blank" rel="noopener noreferrer">{l.label} <span aria-hidden="true">↗</span></a></li>)}
             </ul>
           </div>
+          {estado === 'enviado' ? (
+            <div className="form form-sucesso" role="status" aria-live="polite" data-anim="subir">
+              <svg className="sucesso-icone" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <circle className="sucesso-circulo" cx="32" cy="32" r="29" stroke="currentColor" strokeWidth="2.5" />
+                <path className="sucesso-marca" d="M20 33l8 8 16-17" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <h3>Mensagem <em>enviada</em>.</h3>
+              <p>Obrigado pelo contato! Li com atenção e respondo por e-mail em breve.</p>
+              <button type="button" className="btn btn-fantasma btn-pequeno" onClick={() => setEstado('ocioso')}>Enviar outra mensagem</button>
+            </div>
+          ) : (
           <form ref={formulario} className="form" name="contato" onSubmit={enviar} noValidate data-anim="subir">
             <p hidden><label>Não preencha: <input name="bot-field" tabIndex={-1} autoComplete="off" /></label></p>
             {(['nome', 'email', 'mensagem'] as const).map((campo) => (
@@ -71,10 +82,10 @@ export function Contato({ emailCodificado }: { emailCodificado: string }) {
             ))}
             <button type="submit" className="btn btn-primario" disabled={estado === 'enviando'}>{estado === 'enviando' ? 'Enviando…' : 'Enviar mensagem'}</button>
             <p className="form-retorno" role="status" aria-live="polite">
-              {estado === 'enviado' && 'Mensagem enviada. Obrigado! Respondo por e-mail.'}
               {estado === 'erro' && 'Não consegui enviar agora. Tente de novo ou use o e-mail ao lado.'}
             </p>
           </form>
+          )}
         </div>
       </div>
     </section>
