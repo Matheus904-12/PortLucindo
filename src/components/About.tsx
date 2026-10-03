@@ -24,7 +24,7 @@ export function About() {
   return (
     <section className="secao" id="sobre">
       <div className="container">
-        <SecaoCabeca numero="01" rotulo="Sobre" titulo={<>Sistemas que <em>conversam</em> entre si.</>} />
+        <SecaoCabeca numero="01" rotulo="Sobre" titulo={<>Tecnologia que <em>conecta</em>.</>} />
         <div className="sobre-grade">
           <div className="sobre-texto" data-anim="subir">
             <p className="sobre-lead">{abertura}</p>
