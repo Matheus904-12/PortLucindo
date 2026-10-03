@@ -20,12 +20,14 @@ describe('projetos', () => {
   it('todo projeto com demo ao vivo tem capa, exceto os em construção (que viram uma barra sem imagem)', () => {
     for (const p of profile.projects.filter((x) => x.demo && x.status !== 'em-construcao')) expect(p.cover, p.slug).toBeTruthy()
   })
-  it('o WEAVE é um projeto em construção, com início em jan/2027, sem capa e com a lista do que vem', () => {
+  it('o WEAVE é um projeto em construção, com início em jan/2027, sem capa e sem revelar a ideia', () => {
     const weave = profile.projects.find((p) => p.slug === 'weave')!
     expect(weave.status).toBe('em-construcao')
     expect(weave.startsAt).toBe('2027-01')
     expect(weave.cover).toBeUndefined()
-    expect(weave.highlights?.length).toBeGreaterThanOrEqual(4)
+    expect(weave.highlights).toBeUndefined()
+    expect(weave.stack).toEqual([])
+    expect(weave.summary.length).toBeLessThan(40)
     expect(weave.demo).toBeTruthy()
   })
   it('WEAVE e Prodmais têm repositório privado: nenhum link de código', () => {

@@ -26,7 +26,7 @@
 .barra-titulo { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
 .barra h3 { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1; }
 .selo-breve { padding: 4px 12px; border: 1px dashed var(--accent); border-radius: 999px; color: var(--text); text-transform: none; letter-spacing: 0.04em; }
-.barra-tipo { display: none; color: var(--text-soft); }
+.barra-tipo { display: none; color: var(--text-soft); font-family: var(--font-display); font-style: italic; font-size: 1.15rem; }
 .barra-acoes { display: flex; flex-wrap: wrap; gap: 10px; }
 @media (min-width: 900px) { .barra { border-radius: 999px; padding-left: 36px; } .barra-tipo { display: block; } }
 
@@ -71,7 +71,8 @@
   .selo-breve > span:first-child { color: var(--text); }
   .selo-breve::before { content: ''; position: absolute; left: 2px; top: 0.35em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); animation: pulso-selo 2s ease-out infinite; }
   .selo-sep { display: none; }
-  .barra-acoes { display: grid; grid-template-columns: 1fr 1fr; }
+  .barra-tipo { display: block; font-family: var(--font-display); font-style: italic; font-size: 1.25rem; }
+  .barra-acoes { display: grid; grid-template-columns: 1fr; }
   .barra-acoes .btn { min-height: 46px; }
 }
 @keyframes pulso-selo { 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
