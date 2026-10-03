@@ -29,7 +29,7 @@ const dados: ReturnType<typeof esquemaPublico.parse> = {
   ],
   updatedAt: '2026-10-01',
   experience, education, certifications, projects, skills,
-  languages: [{ name: 'Português', level: 'Fluente ou nativo' }, { name: 'Inglês', level: 'Nível básico' }],
+  languages: [{ name: 'Português', level: 'Nativo' }, { name: 'Inglês', level: 'Básico' }],
   recommendations, milestones,
 }
 
