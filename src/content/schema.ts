@@ -15,6 +15,8 @@ export const educationSchema = z.object({
 export const certificationSchema = z.object({
   id: z.string(), issuer: z.string(), title: z.string(),
   issued: mes.optional(), featured: z.boolean(), credential: z.string().optional(),
+  /** Link direto para o certificado: preferido ao código da credencial, que fica só como reserva. */
+  credentialUrl: z.url().optional(),
   skills: z.array(z.string()).optional(),
   items: z.array(z.object({ title: z.string(), issued: mes, track: z.string() })).optional(),
 })

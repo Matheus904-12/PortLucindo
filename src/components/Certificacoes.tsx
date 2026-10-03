@@ -14,7 +14,9 @@ function Destaque({ cert }: { cert: Certification }) {
       <h3>{cert.title}</h3>
       <p className="mono cert-data">{cert.issued && mesAno(cert.issued)}</p>
       {cert.skills && <ul className="chips" aria-label="Competências">{cert.skills.map((s) => <li key={s}>{s}</li>)}</ul>}
-      {cert.credential && <p className="cert-codigo mono">Credencial {cert.credential}</p>}
+      {cert.credentialUrl
+        ? <a className="btn btn-fantasma btn-pequeno cert-link" href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">Ver certificado <span className="seta" aria-hidden="true">↗</span></a>
+        : cert.credential && <p className="cert-codigo mono">Credencial {cert.credential}</p>}
     </article>
   )
 }

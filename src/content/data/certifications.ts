@@ -38,8 +38,8 @@ const microsoftLearning: NonNullable<Certification['items']> = [
 const senai = (title: string, issued: string) => ({ title, issued, track: 'Trilhas Senai' })
 
 export const certifications: Certification[] = [
-  { id: 'alura-imersao-ia', issuer: 'Alura', title: 'Imersão IA', issued: '2026-06', featured: true, credential: 'acfba699-6dce-4bb2-b953-4632fb1b3315' },
-  { id: 'alura-agentes-google', issuer: 'Alura + Google', title: 'Imersão Dev Agentes de IA Google', issued: '2025-09', featured: true, credential: '07c6f152-09ec-46e3-b8f0-6095def9663c', skills: ['Python', 'LangChain'] },
+  { id: 'alura-imersao-ia', issuer: 'Alura', title: 'Imersão IA', issued: '2026-06', featured: true, credentialUrl: 'https://cursos.alura.com.br/certificate/acfba699-6dce-4bb2-b953-4632fb1b3315' },
+  { id: 'alura-agentes-google', issuer: 'Alura + Google', title: 'Imersão Dev Agentes de IA Google', issued: '2025-09', featured: true, credentialUrl: 'https://cursos.alura.com.br/certificate/07c6f152-09ec-46e3-b8f0-6095def9663c', skills: ['Python', 'LangChain'] },
   { id: 'fiap-semana-tech', issuer: 'FIAP', title: 'Semana Carreira Tech FIAP + Alura', issued: '2026-05', featured: true },
   { id: 'fiap-connect-summit', issuer: 'FIAP', title: 'FIAP Connect Summit', issued: '2025-10', featured: true, skills: ['Estratégia de Inteligência Artificial'] },
   { id: 'ebac-qa', issuer: 'EBAC', title: 'Jornada QA', issued: '2025-10', featured: true, skills: ['Automação de testes', 'Cypress'] },
