@@ -34,7 +34,6 @@ export const projects: Project[] = [
     // Sem descrição, tecnologias nem lista de funções de propósito: o projeto é fechado e o site não revela a ideia.
     slug: 'weave', title: 'WEAVE', kind: 'Em breve', status: 'em-construcao',
     role: 'Autor', summary: 'Em construção.', stack: [], featured: false, startsAt: '2027-01',
-    demo: 'https://weave-platform-neon.vercel.app',
   },
   {
     slug: 'conectatea', title: 'ConectaTEA', kind: 'Plataforma de apoio a famílias', status: 'academico',
