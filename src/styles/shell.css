@@ -15,7 +15,7 @@ body {
 .btn:active { transform: translateY(0) scale(0.98); }
 .btn-primario { background: var(--accent); color: var(--on-accent); }
 .btn-primario:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--accent) 86%, white); }
-.btn .seta { display: inline-block; transition: transform 0.3s var(--ease-out); }
+.btn .seta { display: inline-block; font-size: 1.3em; line-height: 1; transition: transform 0.3s var(--ease-out); }
 .btn:hover .seta { transform: translateX(5px); }
 .btn-fantasma { border-color: var(--line); background: transparent; color: var(--text); }
 .btn-fantasma:hover { border-color: var(--text-soft); background: var(--surface); }
