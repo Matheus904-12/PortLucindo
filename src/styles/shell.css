@@ -45,15 +45,10 @@ body {
 .menu-folha[hidden] { display: none; }
 .menu-folha nav { display: grid; }
 .menu-folha nav a { font-family: var(--font-display); font-style: italic; font-size: clamp(2.4rem, 11vw, 4rem); line-height: 1.15; text-decoration: none; border-bottom: 1px solid var(--line); padding: 8px 0; }
-/* Hover no mouse; no toque o mesmo destaque vem do :active, já que não existe hover. */
-.menu-folha nav a { position: relative; transition: color 0.25s var(--ease-out), padding-left 0.3s var(--ease-out), border-color 0.25s; }
-.menu-folha nav a::after { content: '→'; position: absolute; right: 4px; top: 50%; translate: -12px -50%; opacity: 0; font-family: var(--font-body); font-style: normal; font-size: 1.4rem; color: var(--accent); transition: opacity 0.25s, translate 0.3s var(--ease-out); }
-.menu-folha nav a:active, .menu-folha nav a:focus-visible { color: var(--accent); padding-left: 14px; border-color: var(--accent); }
-.menu-folha nav a:active::after, .menu-folha nav a:focus-visible::after { opacity: 1; translate: 0 -50%; }
-@media (hover: hover) {
-  .menu-folha nav a:hover { color: var(--accent); padding-left: 14px; border-color: var(--accent); }
-  .menu-folha nav a:hover::after { opacity: 1; translate: 0 -50%; }
-}
+/* Só as letras mudam: ficam amarelas no hover (mouse) e ao tocar (:active), já que no celular não existe hover. */
+.menu-folha nav a { transition: color 0.2s var(--ease-out); }
+.menu-folha nav a:active, .menu-folha nav a:focus-visible { color: var(--accent); }
+@media (hover: hover) { .menu-folha nav a:hover { color: var(--accent); } }
 .menu-rodape { display: flex; align-items: center; justify-content: space-between; }
 @keyframes folha-entra { from { opacity: 0; transform: translateY(-8px); } }
 
@@ -70,6 +65,3 @@ body {
   .menu-barras { left: 11px; right: 11px; }
 }
 
-/* Amarelo sobre fundo claro não passa de 2:1; no tema claro o destaque do menu fica na linha e na seta. */
-:root[data-theme='light'] .menu-folha nav a:active, :root[data-theme='light'] .menu-folha nav a:focus-visible { color: var(--text); border-bottom-width: 2px; }
-@media (hover: hover) { :root[data-theme='light'] .menu-folha nav a:hover { color: var(--text); border-bottom-width: 2px; } }

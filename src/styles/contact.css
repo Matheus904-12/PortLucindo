@@ -56,8 +56,7 @@
 .rodape-marca { font-family: var(--font-display); font-style: italic; font-size: clamp(5rem, 22vw, 17rem); line-height: 0.85; letter-spacing: -0.04em; margin: 0 0 clamp(32px, 5vw, 64px); }
 .rodape-linhas { display: grid; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
 .rodape-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 28px; }
-.rodape-links a, .rodape-versoes a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; transition: text-decoration-color 0.2s; }
-.rodape-links a:hover, .rodape-versoes a:hover { text-decoration-color: var(--accent); }
-.rodape-versoes { color: var(--text-soft); font-size: 0.92rem; max-width: 56ch; }
+.rodape-links a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; transition: text-decoration-color 0.2s; }
+.rodape-links a:hover { text-decoration-color: var(--accent); }
 .rodape-copy { margin-top: 20px; }
 @media (min-width: 900px) { .rodape-linhas { grid-template-columns: 1fr 1fr; align-items: start; } }
